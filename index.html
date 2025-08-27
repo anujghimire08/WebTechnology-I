@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basic</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png?20170517184425"
+    />
+  </head>
+  <body style="height: auto; text-align: center; background-color:#eaeff2" >
+    <header>
+      <h1>Learning HTML Basic</h1>
+      <var style="font-size: large">(Use of Elements in HTML)</var>
+    </header>
+    <main>
+      <article>
+        <p>
+          HTML elements are used to structure, format, and present content on
+          web pages, making them interactive and meaningful.
+        </p>
+      </article>
+
+      <!--br (break line)-->
+      <hr style="border: 2px solid red" />
+      <!--horizontal line-->
+
+      <fieldset>
+        <legend>Image Tag</legend>
+        <!-- Anchor tag (use to insert image on web) -->
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png?20170517184425"
+            alt="HTML5 Logo"
+            width="150"
+          />
+        </a>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <!--Video-->
+        <legend>Video Tag</legend>
+        <video
+          src="Video/Html.mp4"
+          width="300px"
+          controls
+          autoplay
+          muted
+        ></video
+        ><br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <!--Audio-->
+        <legend>Audio Tag</legend>
+        <audio
+          src="Audio/The Foundation of Web Pages.mp3"
+          controls
+          autoplay
+          muted
+        ></audio
+        ><br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <!--Anchor Tag(refrence other site)-->
+        <legend>Anchor Tag</legend>
+        <b>learned From:</b>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank"
+          >MND Refrence Site</a
+        >
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Pre Tag</legend>
+        <!--preformatted text(preserves spaces, tabs, and line breaks)-->
+        <pre>
+        Code. Break. 
+                  Fix. 
+                      Repeat. Grow
+      </pre
+        >
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Font Style Tags</legend>
+        <b>Bold</b>
+        <i>Italic</i>
+        <u>Underline</u>
+        <s>Strikethrough</s>
+        <mark>Highlighted</mark>
+        <small>Small Text</small>
+        <big>Big Text</big>
+        <sub>Subscript</sub>
+        <sup>Superscript</sup>
+        <del>Deleted Text</del>
+        <q>Inline Quotation</q>
+        <em>Emphasized Text</em>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Character Entity</legend>
+        <!--Character Entity (used to preserve reserved or special character)-->
+        &trade; &copy; &reg; &euro; &pound; &yen; &cent; &infin;<!--&nbsp(space)-->
+      </fieldset>
+      <br />
+
+      <nav>
+        <fieldset>
+          <legend>Navigation Tag</legend>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </fieldset>
+      </nav>
+      <br />
+
+      <fieldset>
+        <legend>Inline Element</legend>
+        <p><i>Note:</i> Stay in same line, just as wide as content</p>
+        <p>
+          This is an <span style="color: blue">inline</span> element example.
+        </p>
+        <p>TAGS EXAMPLE: span,img,strong</p>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Block Element</legend>
+        <p><i>Note:</i> Doesnot Stay in same line, take all horizontal space</p>
+        <div>This is a block element example.</div>
+        <p>TAGS EXAMPLE: div, p, h1-h6, header, footer</p>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>List Tag</legend>
+
+        <fieldset>
+          <h3>Order List</h3>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+          <!-- (Nested List Example - Uncomment to use)
+          <ol>
+            <li>HTML</li>
+            <ul type="square"> 
+              <li>HTML5</li>
+              <li>HTML4</li> 
+          </ol> 
+            </ul>-->
+          
+        </fieldset>
+
+        <fieldset>
+          <h3>Unorder List</h3>
+          <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </fieldset>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Table Tag</legend>
+        <caption>
+          FRONTEND vs BACKEND
+        </caption>
+        <table
+          border="1px"
+          style="width: 50%; margin: auto; border-collapse: collapse"
+        >
+          <tr> <!--table row(tr)-->
+            <!--table header(th)-->
+            <th>Q.N</th>
+            <th>Frontend</th>
+            <th>Backend</th>
+          </tr>
+          <tr>
+            <!--table data(td)-->
+            <td>1</td>
+            <td>HTML</td>
+            <td>Java</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>JavaScript</td>
+            <td>Mongo</td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Form Tag</legend>
+        <form action="/contact.php" method="post">
+          <label for="Username">Name:</label>
+          <input
+            type="text"
+            placeholder="Username"
+            id="Name"
+            name="Name"
+            required  
+          /> <!--required (makes it mandatory to fill the input field)-->
+          <label for="Passcode">Passcode:</label>
+          <input type="password" id="Passcode" name="Passcode" />
+          Gender: <label for="Male">Male</label>
+          <input type="radio" id="Male" name="gender" value="Male" />
+          <!--instead of using gender directly better use (Sementic Tag) i.e label for better READABILITY , USEABLITY and IMPROVE SEO SCORE. as done below-->
+          <label for="Female">Female</label>
+          <input type="radio" id="Female" name="gender" value="Female" />
+          <label for="Country">Country:</label>
+          <select name="country">
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option></select
+          ><br /><br />
+          <input style="cursor: pointer" type="submit" value="Submit" />
+        </form>
+      </fieldset>
+    </main>
+    <br />
+
+    <hr style="border: 2px solid red" />
+    <footer>
+      <p style="text-align: center; font-style: italic; color: black">
+        <b>Note: </b>This page showcases a variety of HTML elements and their
+        usage. As web standards evolve and new elements or formatting styles
+        become available, this page will be updated accordingly to reflect the
+        latest HTML practices. Your suggestions and feedback are always welcome
+        to help make this resource more complete and up-to-date.
+      </p>
+      <form>
+        <textarea
+          rows="4"
+          cols="50"
+          placeholder="Your Suggestions Here..."
+        ></textarea
+        ><br /> <!--<br> also can be <br />-->
+        <input type="submit" value="Submit" />
+      </form>
+      <p>
+        &copy; 2025 | All Rights Reserved | <a style="text-decoration: none;" href="https://github.com/anujghimire08" target="_blank">Anuj Ghimire</a></p>
+    </footer>
+  </body>
+</html>
