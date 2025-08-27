@@ -1,0 +1,1 @@
+A beginner-friendly HTML project demonstrating the use of basic and semantic HTML elements, including headings, paragraphs, images, forms, tables, lists, navigation menus, and multimedia tags. Designed as a learning reference with clean structure, responsive design, and professional styling updates.
