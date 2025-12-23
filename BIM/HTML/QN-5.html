@@ -9,16 +9,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anchor Tag</title>
+    <style>
+      body,
+      html {
+        scroll-behavior: smooth;
+      }
+      #page1,
+      #page2 {
+        width: 100%;
+        height: 200px;
+        padding: 2rem;
+  
+      }
+      #page1 {
+        background-color: red;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      #page2 {
+        background-color: yellow;
+        color: black;
+        margin-top: 30rem;
+      }
+    </style>
   </head>
   <body>
-    <a href="https://www.anujghimire.com.np/">Anuj's Web Portfolio</a>
-    <a href="QN-1.html">HTML Basics</a>
-    <a href="mailto:contact.anujghimire.com">E-Mail</a>
-    <a href="https://github.com/anujghimire08" target="_blank"
-      ><img
-        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-        width="40px"
-        alt="Github"
-    /></a>
+    <div id="page1">
+      <a href="https://www.anujghimire.com.np/">Anuj's Web Portfolio</a>
+      <a href="#page2">Page 2</a>
+      <a href="mailto:contact.anujghimire.com">E-Mail</a>
+    </div>
+    <div id="page2">
+      <a href="https://github.com/anujghimire08" target="_blank"
+        ><img
+          src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+          width="40px"
+          alt="Github"
+      /></a>
+      <a href="#page1">Page 1</a>
+    </div>
   </body>
 </html>
