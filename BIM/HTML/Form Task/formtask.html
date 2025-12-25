@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login Section</title>
+  </head>
+  <body
+    style="
+      display: grid;
+      place-content: center;
+      scroll-behavior: smooth;
+      text-align: center;
+    "
+  >
+    <fieldset>
+      <legend>Choose What You Want To</legend>
+      <br />
+      <a href="#login">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#register"
+        >Register</a
+      >&nbsp;&nbsp;&nbsp;&nbsp;<a href="#reset">Reset Password</a>
+    </fieldset>
+    <br />
+    <br />
+    <br />
+    <br />
+    <fieldset id="login">
+      <br />
+      <img
+        src="https://img.freepik.com/premium-vector/facebook-logo-vector-facebook-official-logo-vector-facebook-logo-illustrator_1002350-1803.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="facebook logo"
+        width="40px"
+      />
+      <form action="/submit" method="post">
+        <h3>Login to Your Account</h3>
+        <label for="email">Enter your Email <sup>*</sup></label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="username@gmail.com"
+          required
+        /><br /><br />
+        <label for="email">Enter Password <sup>*</sup></label
+        ><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="password"
+          required
+        /><br /><br />
+        <input type="submit" value="Login" /> &nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Clear" />
+      </form>
+    </fieldset>
+    <br />
+    <br />
+    <br />
+    <br />
+    <fieldset id="register">
+      <br />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/01/X-Logo-Round-Color.png"
+        alt="x logo"
+        width="40px"
+      />
+      <form action="/submit" method="post">
+        <h3>Create New Account</h3>
+        <fieldset>
+          <legend>User info</legend>
+          <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+            required
+          />
+          <br />
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="xyz@gmail.com"
+            required
+          />
+          <br />
+          <br />
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            placeholder="98XXXXXXXX"
+            required
+          />
+          <br /><br />
+          <input type="radio" name="male" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="male" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="male" id="other" />
+          <label for="other">Other</label>
+          <br />
+          <br />
+          <select name="country" id="country">
+            <option value="Canada">Canada</option>
+            <option value="Nepal" selected>Nepal</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+          </select>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Hobbies</legend>
+          <br />
+          <input type="checkbox" id="tabletennis" />
+          <label for="tabletennis">Table Tennis</label>
+          <input type="checkbox" id="cricket" />
+          <label for="cricket">Cricket</label>
+          <input type="checkbox" id="football" />
+          <label for="football">Football</label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Uploads</legend>
+          <br />
+          <input type="file" accept="image/*" id="image" /><br /><br />
+          <input type="file" accept="image/*,.pdf" id="image" multiple />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Confirmation</legend>
+          <br />
+          <input type="password" id="password" placeholder="Password" />
+          <br /><br /><input
+            type="password"
+            id="password"
+            placeholder="Confirm Password"
+          />
+          <br />
+          <br />
+          <input type="checkbox" id="terms" />
+          <label for="term">Accept Our Terms & Conditions</label>
+          <br /><br />
+          <input type="submit" value="Register" />
+        </fieldset>
+      </form>
+    </fieldset>
+    <br />
+    <br />
+    <br />
+    <br />
+    <fieldset id="reset">
+      <br />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO60e8vby7UW8U5sl8TiWhdGxKHUxgshoeFQ&s"
+        alt="instagram logo"
+        width="40px"
+      />
+      <h3>Forgot Password</h3>
+      <form action="/submit" method="post">
+        <label for="email">Enter E-Mail <sup>*</sup></label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="someone@gmail.com"
+          required
+        />
+        <br />
+        <br />
+        <input type="button" value="Reset Password" />
+      </form>
+      <p>Enter your email and we'll send you a reset link.</p>
+    </fieldset>
+    <br /><br /><br /><br />
+  </body>
+</html>
