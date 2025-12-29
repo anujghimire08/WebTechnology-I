@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Creation</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/960px-HTML5_logo_and_wordmark.svg.png"
+    />
+  </head>
+  <!-- <style>
+    th,
+    td,
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      border: 2px solid red;
+    }
+    th,
+    td {
+      padding: 10px;
+    }
+  </style> -->
+  <body>
+    <!-- Table Creation -->
+    <table frame="box" rules="all" cellpadding="5">
+      <caption>
+        Table Format 1
+      </caption>
+      <thead>
+        <th>S.N</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Grade</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Anuj Ghimire</td>
+          <td>Web Technology-I</td>
+          <td>60</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Sunyungsha</td>
+          <td>Web Technology-I</td>
+          <td>80</td>
+          <td>A+</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Zhang Zike</td>
+          <td>Web Technology-I</td>
+          <td>60</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br /><br /><br />
+    <table frame="box" rules="all" cellpadding="5">
+      <caption>
+        Table Format 2
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">S.N</th>
+          <th rowspan="2">Name</th>
+          <th colspan="3">Subject</th>
+          <th colspan="2">Outcome</th>
+        </tr>
+        <tr>
+          <td>W.T</td>
+          <td>DSA</td>
+          <td>Account</td>
+          <td>Total</td>
+          <td>Percentage</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Anuj Ghimire</td>
+          <td>10</td>
+          <td>20</td>
+          <td>30</td>
+          <td>60</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Sunyungsha</td>
+          <td>25</td>
+          <td>30</td>
+          <td>35</td>
+          <td>90</td>
+          <td>60%</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Zhang Zike</td>
+          <td>28</td>
+          <td>32</td>
+          <td>30</td>
+          <td>90</td>
+          <td>60%</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br /><br /><br />
+    <table frame="box" rules="all" cellpadding="5">
+      <caption>
+        Table Format 3
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="7">Monthly Expenditure for Mangsir 2082</th>
+        </tr>
+        <tr>
+          <th rowspan="2">S.N</th>
+          <th rowspan="2">Date</th>
+          <th colspan="4">Expenditure</th>
+          <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+          <th>Rent</th>
+          <th>Food</th>
+          <th>Clothing</th>
+          <th>Medicine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>2082/08/01</td>
+          <td>8000</td>
+          <td>3000</td>
+          <td>1500</td>
+          <td>500</td>
+          <td>13000</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>2082/08/10</td>
+          <td>8000</td>
+          <td>2800</td>
+          <td>1200</td>
+          <td>700</td>
+          <td>12700</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th colspan="6">Grand Total</th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
