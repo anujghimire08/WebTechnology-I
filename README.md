@@ -17,8 +17,10 @@ The purpose of this repository is to **track my academic progress**, **showcase 
 ---
 
 ## 🚀 Live Preview
- 
-👉 https://anujghimire08.github.io/WebTechnology-I/
+
+<a href="https://anujghimire08.github.io/WebTechnology-I/">
+   <img src="https://img.shields.io/badge/Live-Demo-60181c?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
 
 > The live preview is hosted using **GitHub Pages** and displays the latest version of my learning work.
 
@@ -37,7 +39,6 @@ Throughout this subject, I learned and practiced:
 - Clean and readable code structure
 - Organizing files and folders professionally
 - cascading style sheets (i.e CSS)
-
 
 ---
 
