@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/960px-HTML5_logo_and_wordmark.svg.png"
+    />
+  </head>
+  <!-- <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      #form {
+        width: 300px;
+        padding: 1rem;
+        background-color: lightcoral;
+        text-align: center;
+        margin: 1rem;
+      }
+      #terms {
+        display: flex;
+      }
+      #name,
+      #email {
+        width: 100%;
+        margin: 0.4rem 0;
+      }
+    </style> -->
+  <body style="text-align: center">
+    <fieldset>
+      <h2>Registration Form</h2>
+      <form
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+        autocomplete="on"
+      >
+        <input type="text" name="username" id="name" placeholder="username" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="username@gmail.com"
+        />
+        <br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        &nbsp; &nbsp; &nbsp;
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="Nepal" selected>Nepal</option>
+          <option value="China">China</option>
+          <option value="Korea">Korea</option>
+        </select>
+        <br /><br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <input
+          type="password"
+          name="repassword"
+          id="repassword"
+          placeholder="re enter password"
+        />
+        <br /><br />
+        <input
+          type="text"
+          name="profession"
+          id="profession"
+          list="professions"
+          placeholder="Profession"
+        />
+        <datalist id="professions">
+          <option value="Student"></option>
+          <option value="Teacher"></option>
+        </datalist>
+
+        <br /><br />
+        <input type="checkbox" id="acceptcondition" name="terms" />
+        <p style="display: inline">Accept Terms & Conditions</p>
+        <br />
+        <br />
+        <label for="image">Image:</label>
+        <input type="file" name="image" accept="image/*" id="image" multiple />
+        <br /><br />
+        <input type="submit" value="Register Now" />
+      </form>
+    </fieldset>
+  </body>
+</html>
