@@ -1,0 +1,2 @@
+A selector is a part of CSS that targets HTML elements you want to style.
+It tells the browser: “Apply these styles to this element.
