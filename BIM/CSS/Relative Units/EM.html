@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Unit: EM</title>
+    <style>
+      .primary {
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        font-size: 10px;
+      }
+      .secondary {
+        width: 50%; /* 50% of the parent element's width */
+        height: 50%; /* 50% of the parent element's height */
+        background-color: black;
+        color: #fff;
+        font-size: 2em; /* 2 times the font size of the parent element */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="primary">
+      Primary Box
+      <div class="secondary">Secondary Box</div>
+    </div>
+  </body>
+</html>

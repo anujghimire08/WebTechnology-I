@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative unit: Percentage</title>
+    <style>
+      .primary {
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+      }
+      .secondary {
+        width: 50%;/* 50% of the parent element's width */
+        height: 50%;/* 50% of the parent element's height */
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="primary">
+      Primary Box
+      <div class="secondary">Secondary Box</div>
+    </div>
+  </body>
+</html>
