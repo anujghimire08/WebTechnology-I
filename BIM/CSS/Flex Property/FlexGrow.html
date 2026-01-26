@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Grow</title>
+    <style>
+      * {
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 900px;
+        height: 200px;
+        border: 2px solid;
+        background-color: lavender;
+        display: flex;
+        justify-content: center;
+      }
+      .div {
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid;
+      }
+      #box1 {
+        background-color: red;
+      }
+      #box2 {
+        background-color: blue;
+        flex-grow: 3;
+      }
+      #box3 {
+        background-color: yellow;
+      }
+      #box4 {
+        background-color: lawngreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Grow</h1>
+    <div class="container">
+      <div id="box1" class="div">1</div>
+      <div id="box2" class="div">2</div>
+      <div id="box3" class="div">3</div>
+      <div id="box4" class="div">4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+start = all left
+
+end = all right
+
+center = middle
+
+space-between = equal gaps between
+
+space-around = equal gaps around each
+
+space-evenly = equal gaps everywhere
