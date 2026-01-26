@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .Container {
+        display: grid;
+        grid-template-rows: 50px 50px;
+        grid-template-columns: 50px 50px;
+      }
+      .div1 {
+        grid-row: 1/2;
+        grid-column: 2/2;
+        background-color: aqua;
+      }
+      .div2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-color: greenyellow;
+      }
+      .div3 {
+        grid-row: 2/2;
+        grid-column: 1/2;
+        background-color: pink;
+      }
+      .div4 {
+        grid-row: 2/2;
+        grid-column: 2/2;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="div1">Box1</div>
+      <div class="div2">Box2</div>
+      <div class="div3">Box3</div>
+      <div class="div4">Box4</div>
+    </div>
+  </body>
+</html>
