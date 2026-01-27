@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --theme-color: #008975;
+  --bg-color: #f4f6f8;
+  --light-white: #fafafa;
+}
+body {
+  background-color: var(--bg-color);
+}
+header {
+  background-color: var(--light-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 1rem 5rem;
+  border-bottom: 1px solid grey;
+}
+header h1 {
+  color: var(--theme-color);
+  font-family: "Mukta";
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+#header-login {
+  width: 40px;
+  height: 40px;
+  background-color: var(--theme-color);
+  text-decoration: none;
+  color: var(--light-white);
+  font-weight: 400;
+}
+#header-login:hover {
+  background-color: #0bbda3;
+}
+#page-language,
+#header-login {
+  /* padding: 0.5rem; */
+  border-radius: 6px;
+}
+#page-language {
+  color: rgb(31, 31, 31);
+  /* border: none; */
+}
+main {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+  margin: 4rem auto;
+}
+main > div {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 6px;
+}
