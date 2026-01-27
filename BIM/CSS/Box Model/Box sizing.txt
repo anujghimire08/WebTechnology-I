@@ -1,0 +1,3 @@
+box-sizing controls whether the width/height you set on an element includes padding and border or not.
+CONTENT-BOX —> default. width / height apply to the content box only. Padding and border are added outside that, increasing the element's total size.
+BORDER-BOX —> width / height include content + padding + border. Easier to reason about for layouts.
