@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementation of CSS in Web Pages</title>
+    <style>
+      #str {
+        color: white;
+        background-color: red;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #str-span {
+        color: yellow;
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+    <link rel="stylesheet" href="cssType.css" />
+  </head>
+  <body>
+    <p style="color: blue">
+      p tag using <span style="color: red">inline-css</span>
+    </p>
+    <br />
+    <strong id="str">
+      strong tag using <span id="str-span">internal css</span></strong
+    >
+    <br /><br />
+    <em class="italic-text">em tag using <span>external css</span></em>
+  </body>
+</html>
+<!-- Priority 1st -> inline css -->
+<!-- Priority 2nd -> internal css -->
+<!-- Priority 3rd -> external css -->
+<!-- if we use !important priority is given to particular css -->

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Universal Selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* id selector */
+      #heading {
+        color: red;
+      }
+
+      /* Class Selector */
+      .box {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+      }
+
+      /* Combination selector  */
+      .box p {
+        font-size: 20px;
+        color: white;
+      }
+
+      /* pseudo class */
+      a:hover {
+        color: rgb(0, 128, 0);
+      }
+
+      input:focus {
+        border: 2px solid #ff0000;
+        outline: none;
+      }
+
+      /* pseudo element */
+      .box p::first-letter {
+        color: black;
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      /* Attribute Selector */
+      input[type="text"] {
+        color: red;
+      }
+
+      a[href^="https"] {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">CSS Selectors</h1>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        laborum nostrum rerum quasi incidunt deleniti assumenda, necessitatibus
+        autem nobis fugiat repudiandae
+      </p>
+    </div>
+    <a href="https://www.anujghimire.com.np">Anuj Ghimire</a>
+    <br /><br />
+    <input type="text" name="name" />
+  </body>
+</html>
