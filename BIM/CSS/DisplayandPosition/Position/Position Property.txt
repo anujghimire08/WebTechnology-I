@@ -1,0 +1,9 @@
+static → Default, stays in normal order (no movement).
+
+relative → Stays in order, but you can move it a little from its spot.
+
+absolute → Breaks out of order, placed exactly where you set it inside parent.
+
+fixed → Stays stuck on screen when you scroll.
+
+sticky → Moves like relative, but sticks to the screen when scrolling past a point.(You can’t mix both axes at the same time.)

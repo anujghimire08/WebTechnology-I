@@ -1,0 +1,36 @@
+* {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 1000px;
+      }
+      .div {
+        width: 130px;
+        height: 100px;
+        text-align: center;
+        background-color: lightblue;
+        margin: 5px;
+        border: 2px solid black;
+      }
+      #box1 {
+        position: static; /*default value*/
+      }
+      #box2 {
+        position: absolute; /*relative to the nearest positioned ancestor*/
+        top: 20px;
+      }
+      #box3 {
+        position: relative; /*relative to its normal position*/
+        top: 20px;
+        left: 40px;
+      }
+      #box4 {
+        position: fixed; /*relative to the viewport*/
+        top: 0;
+        right: 10px;
+      }
+      #box5 {
+        position: sticky; /*relative to the viewport until a given offset position is met in the viewport*/
+        top: 90px;
+      }
