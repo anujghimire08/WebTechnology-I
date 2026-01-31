@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        color: white;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        animation-name: Rotate;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes Rotate {
+        0% {
+          /*percentage of duration*/
+          left: 10px;
+        }
+        50% {
+          left: 50px;
+        }
+        100% {
+          left: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Animation1</div>
+  </body>
+</html>
