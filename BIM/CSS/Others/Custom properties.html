@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom properties</title>
+    <style>
+      :root {
+        --color: red;
+        --background-color: green;
+        --border-color: navy;
+      }
+      h1 {
+        color: var(--color);
+      }
+      h2 {
+        background-color: var(--background-color);
+      }
+      h3 {
+        border: 2px solid var(--border-color);
+      }
+      input {
+        accent-color:red;
+        width: 30px;
+        height: 30px;
+        display: inline;
+      }
+      div p{
+        alignment-baseline: hanging;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, esse!</h1>
+    <h2>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+      consequatur?
+    </h2>
+    <h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facilis!
+    </h3>
+    <input type="checkbox" />
+    <div class="div"><p>gfjsdferiwedsew</p></div>
+  </body>
+</html>
