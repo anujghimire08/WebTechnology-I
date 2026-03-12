@@ -1,0 +1,6 @@
+classList DOM Add:
+| Property                   | Use                 |
+| -------------------------- | ------------------- |
+| `className = "dark"`       | Replace all classes |
+| `classList.add("dark")`    | Add a class         |
+| `classList.remove("dark")` | Remove a class      |
