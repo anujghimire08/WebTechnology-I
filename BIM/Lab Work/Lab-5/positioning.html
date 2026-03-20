@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positioning</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 2px solid black;
+        box-sizing: border-box;
+        border-radius: 0.1rem;
+        padding: 0.3rem;
+        margin: 0.2rem;
+        position: relative;
+      }
+      .child {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border: 2px solid black;
+        text-align: center;
+        top: 2rem;
+        left: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">parent</div>
+    <div class="child">im child</div>
+  </body>
+</html>

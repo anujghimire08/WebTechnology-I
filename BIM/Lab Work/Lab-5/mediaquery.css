@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  height: 100dvh;
+  background-color: rgba(128, 128, 128, 0.283);
+}
+#container {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  padding: 0.3rem;
+}
+.card {
+  width: 150px;
+  height: auto;
+  background-color: lightblue;
+  padding: 0.4rem;
+}
+
+@media (max-width: 548px) {
+  #container {
+    flex-direction: column;
+  }
+  .card {
+    background-color: red;
+    color: white;
+  }
+}
