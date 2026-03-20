@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ways to link js</title>
+    <script>
+      function internalJS() {
+        alert("Internal JavaScript Connected Successful!");
+      }
+    </script>
+  </head>
+  <body>
+    <!--Inline JS Link-->
+    <button onclick="alert('Inline JavaScript Connected Successful!')">
+      Connect Inline JS
+    </button>
+    <!--Internal JS Link-->
+    <button onclick="internalJS()">Connect Internal JS</button>
+    <!-- External JS Link -->
+    <button onclick="externalJS()">Connect External JS</button>
+    <script src="app.js"></script>
+  </body>
+</html>
