@@ -13,12 +13,17 @@ body {
   display: flex;
   gap: 4px;
   padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .card {
-  width: 150px;
-  height: auto;
+  width: 220px;
+  height: 220px;
   background-color: lightblue;
   padding: 0.4rem;
+  flex-shrink: 0;
 }
 
 @media (max-width: 548px) {
@@ -28,5 +33,6 @@ body {
   .card {
     background-color: red;
     color: white;
+    width: 100%;
   }
 }
