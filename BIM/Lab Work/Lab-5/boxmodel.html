@@ -5,30 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>box model</title>
     <style>
-      .parent {
+      div {
         width: 200px;
         height: 200px;
-        background-color: red;
-        border: 2px solid black;
+        background-color: #000;
+        border: 2px solid gray;
         box-sizing: border-box;
-        border-radius: 0.1rem;
-        padding: 0.3rem;
-        margin: 0.2rem;
-      }
-      .child {
-        width: 100px;
-        height: 100px;
-        background-color: #fff;
-        box-sizing: border-box;
-        border: 2px solid black;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border-radius: 1rem;
+        padding: 0.8rem;
+        margin: 2rem 4rem;
+        color: white;
+        outline: 2px solid gold;
       }
     </style>
   </head>
   <body>
-    <div class="parent"><div class="child">im child</div></div>
+    <div>container</div>
   </body>
 </html>
