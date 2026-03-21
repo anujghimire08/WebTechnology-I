@@ -10,13 +10,13 @@ body {
 }
 #container {
   width: 100%;
-  display: flex;
-  gap: 4px;
   padding: 0.3rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 2rem;
 }
 .card {
   width: 220px;
@@ -24,6 +24,8 @@ body {
   background-color: lightblue;
   padding: 0.4rem;
   flex-shrink: 0;
+  text-align: center;
+  border-radius: 0.6rem;
 }
 
 @media (max-width: 548px) {
