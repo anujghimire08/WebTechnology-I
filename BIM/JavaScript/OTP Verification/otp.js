@@ -44,10 +44,19 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
+const result = document.getElementById("result");
 const verification = (userInputOTP) => {
   if (otp == Number(userInputOTP)) {
-    console.log("matched");
+    result.textContent = "Matched";
+    result.style.color = "green";
+    setInterval(() => {
+      result.textContent = "";
+    }, 2000);
   } else {
-    console.log("not matched");
+    result.textContent = "Not Matched";
+    result.style.color = "red";
+    setInterval(() => {
+      result.textContent = "";
+    }, 2000);
   }
 };
