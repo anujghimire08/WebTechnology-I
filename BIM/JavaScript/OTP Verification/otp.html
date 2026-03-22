@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OPT Verification</title>
+    <title>OTP Verification</title>
     <link rel="stylesheet" href="otp.css" />
   </head>
   <body>
@@ -11,6 +11,7 @@
       <div id="image-container">
         <img src="opt.png" alt="phone" />
       </div>
+
       <div id="heading">
         <h5>Verify Code</h5>
         <p id="info">
@@ -18,17 +19,22 @@
           <span id="phone-number"></span>.
         </p>
       </div>
+
       <div id="input-container">
-        <input type="text" maxlength="1" /><input
-          type="text"
-          maxlength="1"
-        /><input type="text" maxlength="1" /><input type="text" maxlength="1" />
+        <input type="text" maxlength="1" autocomplete="off" />
+        <input type="text" maxlength="1" autocomplete="off" />
+        <input type="text" maxlength="1" autocomplete="off" />
+        <input type="text" maxlength="1" autocomplete="off" />
       </div>
-      <button id="verify-btn">Verify</button>
-      <p id="no-code">Didn't get a code?<span id="timer"></span></p>
+
+      <button id="verify-btn" type="submit">Verify</button>
+
+      <p id="no-code">Didn't get a code? <span id="timer">1:00</span></p>
     </form>
+
     <div id="popup"></div>
     <p id="result"></p>
+
     <script src="otp.js"></script>
   </body>
 </html>

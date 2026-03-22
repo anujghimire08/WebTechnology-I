@@ -1,89 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jost", sans-serif;
-}
 body {
-  height: 100dvh;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100dvh;
+  background: #f0f2f5;
+  overflow: hidden;
+  margin: 0;
 }
+
 .container {
-  width: 250px;
-  background-color: white;
-  padding: 1rem;
-  border: 1px solid gray;
-  border-radius: 0.5rem;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-}
-#image-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 15px;
 }
+
 #image-container img {
   width: 120px;
+  margin-bottom: 5px;
 }
-#heading {
+
+#heading h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
   text-align: center;
 }
-fieldset {
-  border-radius: 0.5rem;
-  padding: 0.4rem;
-  border: 1px solid;
+
+#user-input fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
   overflow: hidden;
-  margin-bottom: 0.2rem;
 }
+
 #input-container {
-  width: 100%;
-  height: 1.4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 0.3rem;
+  gap: 10px;
 }
+
 #input-container img {
   height: 20px;
 }
+
 #input-container input {
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
+  flex: 1;
+  padding: 8px 10px;
   font-size: 1rem;
-  padding: 0 0.4rem;
-}
-#info {
-  font-size: 0.6rem;
-  color: rgba(128, 128, 128, 0.9);
-}
-#continue-btn {
-  width: 100%;
-  padding: 0.6rem 0;
-  background-color: rgba(0, 0, 0, 0.799);
   border: none;
-  border-radius: 0.3rem;
-  position: relative;
+  border-radius: 5px;
+  outline: none;
+}
+
+#info {
+  font-size: 0.7rem;
+  color: rgba(128, 128, 128, 0.9);
+  margin-top: 5px;
+}
+
+#continue-btn,
+#verify-btn {
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  overflow: hidden;
+  border: none;
+  padding: 6px 0;
+  border-radius: 5px;
   cursor: pointer;
+  width: 100%;
   font-weight: 500;
+  transition: background-color 0.3s;
 }
-#continue-btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 0.2rem;
-  bottom: 0;
-  background-color: #000;
-}
-#continue-btn:hover {
-  background-color: #000;
+
+#continue-btn:hover,
+#verify-btn:hover {
+  background-color: black;
 }
