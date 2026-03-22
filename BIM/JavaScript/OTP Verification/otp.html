@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OPT Verification</title>
     <link rel="stylesheet" href="otp.css" />
-    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -15,7 +14,8 @@
       <div id="heading">
         <h5>Verify Code</h5>
         <p id="info">
-          Check your SMS inbox, we have sent you the code at +0 000 000 0000.
+          Check your SMS inbox, we have sent you the code at
+          <span id="phone-number"></span>.
         </p>
       </div>
       <div id="input-container">
@@ -25,8 +25,10 @@
         /><input type="text" maxlength="1" /><input type="text" maxlength="1" />
       </div>
       <button id="continue-btn">
-        Didn't receive a code <span>(0:46)</span>
+        Didn't receive a code (<span id="timer"></span>)
       </button>
     </div>
+    <div id="popup">78uuhjsh</div>
+    <script src="opt.js"></script>
   </body>
 </html>

@@ -75,3 +75,13 @@ input {
   cursor: pointer;
   font-weight: 500;
 }
+#popup {
+  position: absolute;
+  inset: auto auto 2rem 2rem;
+  background-color: #000;
+  color: white;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  display: none;
+}
