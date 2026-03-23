@@ -29,15 +29,38 @@
       align-items: center;
       gap: 1rem;
     }
+    h2 {
+      margin: 0.8rem 0;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    #username {
+      font-size: 2rem;
+    }
     #user-info img {
       height: 150px;
       width: 150px;
       border-radius: 50%;
     }
+    #name-tick {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.1rem;
+    }
+    #name-tick img {
+      width: 22px;
+      height: 22px;
+      margin-top: 0.5rem;
+      user-select: none;
+      pointer-events: none;
+    }
     #title {
-      font-size: 2rem;
+      font-size: 1.5rem;
       letter-spacing: normal;
       line-height: 1.2;
+      margin-bottom: 0.6rem;
     }
     #sub-title {
       color: gray;
@@ -47,34 +70,38 @@
       margin-top: 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      padding: 10px;
+      padding: 0 10px;
       gap: 1rem;
     }
     .card {
       display: flex;
       flex-direction: column;
-      gap: 0.6rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
       padding: 20px 15px;
-      height: 400px;
+      height: auto;
       border: 1px solid gray;
       border-radius: 0.5rem;
       box-shadow:
         0px 2px 2px rgba(0, 0, 0, 0.4),
         0px 4px 4px rgba(0, 0, 0, 0.5);
-      transition: transform 2s ease-in-out;
+      transition: transform 0.42s ease-in-out;
       overflow: hidden;
+      margin-bottom: 2rem;
     }
-    .card:hover #image-container img {
-      transform: scale(1.02);
+    .card:hover {
+      transform: translateY(-8px);
     }
     #image-container {
       width: 250px;
+      height: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     #image-container img {
-      width: 100%;
+      width: 320px;
     }
   </style>
   <body>
@@ -82,64 +109,87 @@
       <div id="user-info">
         <img src="./images/profile.jpg" alt="anuj's profile" />
         <div id="user-description">
-          <h1 id="title">Anuj Ghimire</h1>
+          <div id="name-tick">
+            <h1 id="username">Anuj Ghimire</h1>
+            <img src="./images/social.png" alt="verified" />
+          </div>
           <p id="sub-title">Web Enthusiast</p>
         </div>
       </div>
+      <div>
+        <h2>
+          Selection of projects based on learning objectives and skills gained
+        </h2>
+      </div>
       <div id="projects">
-        <div class="card">
-          <div id="image-container">
-            <img src="/images/image.png" alt="" />
-          </div>
-          <div id="project-info">
-            <h1 id="title">Project Name</h1>
-            <br />
-            <p id="sub-title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              distinctio quo at et nam, alias voluptatum adipisci harum sequi
-              sit!
-            </p>
-          </div>
-        </div>
         <div class="card">
           <div id="image-container">
             <img src="/images/otp.png" alt="" />
           </div>
           <div id="project-info">
-            <h1 id="title">Project Name</h1>
-            <br />
+            <h1 id="title">Mobile OTP Verification</h1>
             <p id="sub-title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              distinctio quo at et nam, alias voluptatum adipisci harum sequi
-              sit!
+              A simple, interactive web application to verify Nepalese mobile
+              numbers using OTP. Users can input their mobile number, receive a
+              4-digit OTP, and validate it. Perfect for learning form
+              validation, localStorage, and JavaScript input handling.
             </p>
           </div>
         </div>
         <div class="card">
           <div id="image-container">
-            <img src="/images/image.png" alt="" />
+            <img src="/images/hamro.png" alt="" />
           </div>
           <div id="project-info">
-            <h1 id="title">Project Name</h1>
-            <br />
+            <h1 id="title">Hamro.com UI Clone</h1>
             <p id="sub-title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              distinctio quo at et nam, alias voluptatum adipisci harum sequi
-              sit!
+              Developed front-end clone of the Hamro.com platform, replicating
+              its core user interface and layout using HTML5 and CSS3. The
+              project showcases a multi-service portal design that includes
+              sections such as Online Radio, Forex Exchange, Baby Names,
+              Horoscope (Rashifal).
             </p>
           </div>
         </div>
         <div class="card">
           <div id="image-container">
-            <img src="/images/image.png" alt="" />
+            <img src="/images/theme.png" alt="" />
           </div>
           <div id="project-info">
-            <h1 id="title">Project Name</h1>
-            <br />
+            <h1 id="title">Dynamic Theme Switcher</h1>
             <p id="sub-title">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              distinctio quo at et nam, alias voluptatum adipisci harum sequi
-              sit!
+              Developed a responsive web application that allows users to
+              dynamically switch between multiple color themes (Light, Pink,
+              Blue, Green, and Dark). The project utilizes modern CSS variables
+              and the advanced :has() selector for real-time styling
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="image-container">
+            <img src="/images/calculator.png" alt="" />
+          </div>
+          <div id="project-info">
+            <h1 id="title">Arithmetic Calculator</h1>
+            <p id="sub-title">
+              Developed a fully functional Arithmetic Calculator web application
+              using HTML, CSS, and JavaScript. The project allows users to
+              perform basic arithmetic operations including addition,
+              subtraction, multiplication, and division.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="image-container">
+            <img src="/images/login.png" alt="" />
+          </div>
+          <div id="project-info">
+            <h1 id="title">Login Validation</h1>
+            <p id="sub-title">
+              Developed a Login Validation Web Application using regular
+              expressions that validates user credentials using HTML, CSS, and
+              JavaScript. This project ensures that users enter a properly
+              formatted email and a strong password before submission..
             </p>
           </div>
         </div>
