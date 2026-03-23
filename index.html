@@ -10,127 +10,156 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100dvh;
+      }
+
+      .container {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+      }
+
+      #user-info {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      #user-info img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      #name-tick {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+      }
+
+      #name-tick img {
+        width: 22px;
+        height: 22px;
+        margin-top: 0.5rem;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      #username {
+        font-size: 2rem;
+      }
+
+      #user-description p {
+        color: gray;
+        font-size: 1rem;
+      }
+
+      h2 {
+        margin: 0.8rem 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+
+      #projects {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding: 0 10px;
+        gap: 1rem;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 20px 15px;
+        border: 1px solid gray;
+        border-radius: 0.5rem;
+        box-shadow:
+          0px 2px 2px rgba(0, 0, 0, 0.4),
+          0px 4px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.42s ease-in-out;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #project-info h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+      }
+
+      #project-info p {
+        color: gray;
+        font-size: 1rem;
+      }
+
+      .card-footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0.2rem;
+      }
+
+      .card-footer a {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid gray;
+        padding: 4px 8px;
+        text-decoration: none;
+        border-radius: 0.2rem;
+        font-weight: 500;
+        color: rgb(76, 76, 76);
+        transition: all 0.2s ease;
+      }
+
+      .card-footer a:hover {
+        color: #1490f1;
+      }
+
+      .card-footer a:hover i {
+        transform: translateY(-2px);
+      }
+
+      #image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #image-container img {
+        width: 100%;
+        max-width: 320px;
+      }
+    </style>
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      height: 100dvh;
-    }
-    .container {
-      width: 90%;
-      /* background-color: red; */
-      margin: 1rem auto;
-      height: auto;
-    }
-    #user-info {
-      display: flex;
-      justify-content: center;
-      padding: 10px 20px;
-      align-items: center;
-      gap: 1rem;
-    }
-    h2 {
-      margin: 0.8rem 0;
-      text-align: center;
-      font-weight: 400;
-      font-size: 1.5rem;
-    }
-    #username {
-      font-size: 2rem;
-    }
-    #user-info img {
-      height: 150px;
-      width: 150px;
-      border-radius: 50%;
-    }
-    #name-tick {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0.1rem;
-    }
-    #name-tick img {
-      width: 22px;
-      height: 22px;
-      margin-top: 0.5rem;
-      user-select: none;
-      pointer-events: none;
-    }
-    #title {
-      font-size: 1.5rem;
-      letter-spacing: normal;
-      line-height: 1.2;
-      margin-bottom: 0.6rem;
-    }
-    #sub-title {
-      color: gray;
-      font-size: 1rem;
-    }
-    #projects {
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      padding: 0 10px;
-      gap: 1rem;
-    }
-    .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0.8rem;
-      padding: 25px 15px;
-      height: auto;
-      border: 1px solid gray;
-      border-radius: 0.5rem;
-      box-shadow:
-        0px 2px 2px rgba(0, 0, 0, 0.4),
-        0px 4px 4px rgba(0, 0, 0, 0.5);
-      transition: transform 0.42s ease-in-out;
-      overflow: hidden;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-    }
-    a {
-      position: absolute;
-      inset: auto 10px 10px auto;
-      border: 1px solid gray;
-      padding: 4px 8px;
-      text-decoration: none;
-      border-radius: 0.2rem;
-      margin-right: 4px;
-      font-weight: 500;
-      transition: transform 0.1 ease;
-      color: rgb(76, 76, 76);
-    }
-    i {
-      margin-left: 4px;
-    }
-    a:hover {
-      color: #1490f1;
-    }
-    a:hover i {
-      transform: translateY(-2px);
-    }
-    #image-container {
-      width: 250px;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #image-container img {
-      width: 320px;
-    }
-  </style>
   <body>
     <div class="container">
       <div id="user-info">
@@ -143,11 +172,11 @@
           <p id="sub-title">Web Enthusiast</p>
         </div>
       </div>
-      <div>
-        <h2>
-          Selection of projects based on learning objectives and skills gained
-        </h2>
-      </div>
+
+      <h2>
+        Selection of projects based on learning objectives and skills gained
+      </h2>
+
       <div id="projects">
         <div class="card">
           <div id="image-container">
@@ -162,10 +191,13 @@
               validation, localStorage, and JavaScript input handling.
             </p>
           </div>
-          <a href="/BIM//JavaScript/OTP Verification/index.html"
-            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <div class="card-footer">
+            <a href="BIM/JavaScript/OTPVerification/index.html">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
+
         <div class="card">
           <div id="image-container">
             <img src="images/hamro.png" alt="hamro.com clone" />
@@ -179,10 +211,13 @@
               sections such as Online Radio, Forex Exchange, Baby Names.
             </p>
           </div>
-          <a href="/Hamro Web Clone/index.html"
-            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <div class="card-footer">
+            <a href="HamroWebClone/index.html">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
+
         <div class="card">
           <div id="image-container">
             <img src="images/theme.png" alt="theme switcher app" />
@@ -196,10 +231,13 @@
               and the advanced :has() selector for real-time styling
             </p>
           </div>
-          <a href="/Dynamic Theme Switching Using CSS/index.html"
-            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <div class="card-footer">
+            <a href="DynamicThemeSwitch/index.html">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
+
         <div class="card">
           <div id="image-container">
             <img src="images/calculator.png" alt="calculator app" />
@@ -213,10 +251,13 @@
               subtraction, multiplication, and division.
             </p>
           </div>
-          <a href="/BIM/JavaScript/Calculator/index.html"
-            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <div class="card-footer">
+            <a href="BIM/JavaScript/Calculator/index.html">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
+
         <div class="card">
           <div id="image-container">
             <img src="images/login.png" alt="login app" />
@@ -230,9 +271,11 @@
               formatted email and a strong password before submission.
             </p>
           </div>
-          <a href="/BIM/JavaScript/Mail Password Validator/"
-            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
-          ></a>
+          <div class="card-footer">
+            <a href="BIM/JavaScript/MailPasswordValidator/mailpass.html">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
