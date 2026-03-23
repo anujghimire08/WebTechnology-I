@@ -6,6 +6,10 @@
     <title>Anuj Ghimire</title>
     <link rel="icon" href="images/profile.jpg" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <style>
     * {
@@ -80,7 +84,7 @@
       justify-content: center;
       align-items: center;
       gap: 0.8rem;
-      padding: 20px 15px;
+      padding: 25px 15px;
       height: auto;
       border: 1px solid gray;
       border-radius: 0.5rem;
@@ -90,9 +94,31 @@
       transition: transform 0.42s ease-in-out;
       overflow: hidden;
       margin-bottom: 2rem;
+      position: relative;
     }
     .card:hover {
       transform: translateY(-8px);
+    }
+    a {
+      position: absolute;
+      inset: auto 10px 10px auto;
+      border: 1px solid gray;
+      padding: 4px 8px;
+      text-decoration: none;
+      border-radius: 0.2rem;
+      margin-right: 4px;
+      font-weight: 500;
+      transition: transform 0.1 ease;
+      color: rgb(76, 76, 76);
+    }
+    i {
+      margin-left: 4px;
+    }
+    a:hover {
+      color: #1490f1;
+    }
+    a:hover i {
+      transform: translateY(-2px);
     }
     #image-container {
       width: 250px;
@@ -125,7 +151,7 @@
       <div id="projects">
         <div class="card">
           <div id="image-container">
-            <img src="/images/otp.png" alt="" />
+            <img src="images/otp.png" alt="opt validator app" />
           </div>
           <div id="project-info">
             <h1 id="title">Mobile OTP Verification</h1>
@@ -136,10 +162,13 @@
               validation, localStorage, and JavaScript input handling.
             </p>
           </div>
+          <a href="/BIM//JavaScript/OTP Verification/index.html"
+            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
         </div>
         <div class="card">
           <div id="image-container">
-            <img src="/images/hamro.png" alt="" />
+            <img src="images/hamro.png" alt="hamro.com clone" />
           </div>
           <div id="project-info">
             <h1 id="title">Hamro.com UI Clone</h1>
@@ -147,14 +176,16 @@
               Developed front-end clone of the Hamro.com platform, replicating
               its core user interface and layout using HTML5 and CSS3. The
               project showcases a multi-service portal design that includes
-              sections such as Online Radio, Forex Exchange, Baby Names,
-              Horoscope (Rashifal).
+              sections such as Online Radio, Forex Exchange, Baby Names.
             </p>
           </div>
+          <a href="/Hamro Web Clone/index.html"
+            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
         </div>
         <div class="card">
           <div id="image-container">
-            <img src="/images/theme.png" alt="" />
+            <img src="images/theme.png" alt="theme switcher app" />
           </div>
           <div id="project-info">
             <h1 id="title">Dynamic Theme Switcher</h1>
@@ -165,10 +196,13 @@
               and the advanced :has() selector for real-time styling
             </p>
           </div>
+          <a href="/Dynamic Theme Switching Using CSS/index.html"
+            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
         </div>
         <div class="card">
           <div id="image-container">
-            <img src="/images/calculator.png" alt="" />
+            <img src="images/calculator.png" alt="calculator app" />
           </div>
           <div id="project-info">
             <h1 id="title">Arithmetic Calculator</h1>
@@ -179,10 +213,13 @@
               subtraction, multiplication, and division.
             </p>
           </div>
+          <a href="/BIM/JavaScript/Calculator/index.html"
+            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
         </div>
         <div class="card">
           <div id="image-container">
-            <img src="/images/login.png" alt="" />
+            <img src="images/login.png" alt="login app" />
           </div>
           <div id="project-info">
             <h1 id="title">Login Validation</h1>
@@ -190,9 +227,12 @@
               Developed a Login Validation Web Application using regular
               expressions that validates user credentials using HTML, CSS, and
               JavaScript. This project ensures that users enter a properly
-              formatted email and a strong password before submission..
+              formatted email and a strong password before submission.
             </p>
           </div>
+          <a href="/BIM/JavaScript/Mail Password Validator/"
+            >Demo<i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
         </div>
       </div>
     </div>
