@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anuj Ghimire</title>
+    <title>Anuj Ghimire Projectfolio</title>
     <link rel="icon" href="images/profile.jpg" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link
@@ -48,6 +48,15 @@
         align-items: center;
         gap: 0.1rem;
       }
+      span {
+        font-style: italic;
+        &:hover {
+          color: #1490f1;
+        }
+      }
+      span:hovr {
+        font-style: italic;
+      }
 
       #name-tick img {
         width: 22px;
@@ -64,6 +73,19 @@
       #user-description p {
         color: gray;
         font-size: 1rem;
+      }
+
+      #social-medias {
+        margin-top: 0.6rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      #social-medias a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        transition: all 0.42s ease-in-out;
       }
 
       h2 {
@@ -93,13 +115,14 @@
         box-shadow:
           0px 2px 2px rgba(0, 0, 0, 0.4),
           0px 4px 4px rgba(0, 0, 0, 0.5);
-        transition: transform 0.42s ease-in-out;
+        transition: all 0.42s ease-in-out;
         overflow: hidden;
         margin-bottom: 2rem;
         position: relative;
       }
 
-      .card:hover {
+      .card:hover,
+      #social-medias a:hover {
         transform: translateY(-8px);
       }
 
@@ -158,6 +181,28 @@
         width: 100%;
         max-width: 320px;
       }
+      @media (max-width: 768px) {
+        #username {
+          font-size: 1rem;
+        }
+        #name-tick img {
+          width: 22px;
+          height: 22px;
+          margin-top: 0rem;
+        }
+        #social-medias a {
+          font-size: 0.8rem;
+        }
+        #user-description p {
+          font-size: 0.8rem;
+        }
+        #social-medias {
+          gap: 0.2rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -169,12 +214,32 @@
             <h1 id="username">Anuj Ghimire</h1>
             <img src="./images/social.png" alt="verified" />
           </div>
-          <p id="sub-title">Web Enthusiast</p>
+          <div id="social-medias">
+            <a href="https://www.anujghimire.com.np" title="Website"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/anujghimire08"
+              title="Linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/anujghimire08" title="Github"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a href="https://x.com/AnujGhimire" title="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="mailto:contact.anujghimire@gmail.com" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <h2>
-        Selection of projects based on learning objectives and skills gained
+        Selection of projects based on <span>Web Technology-I</span> objectives
+        and practical skills gained.
       </h2>
 
       <div id="projects">

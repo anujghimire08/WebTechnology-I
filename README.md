@@ -18,7 +18,7 @@ The purpose of this repository is to **track my academic progress**, **showcase 
 
 ## 🚀 Live Preview
 
-<a href="https://anujghimire08.github.io/WebTechnology-I/">
+<a href="anujghimireprojectfolio.vercel.app">
    <img src="https://img.shields.io/badge/Live-Demo-60181c?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 
