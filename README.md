@@ -18,11 +18,9 @@ The purpose of this repository is to **track my academic progress**, **showcase 
 
 ## 🚀 Live Preview
 
-<a href="anujghimireprojectfolio.vercel.app">
-   <img src="https://img.shields.io/badge/Live-Demo-60181c?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
+[![Live Demo](https://img.shields.io/badge/Live-Demo-1490f1?style=for-the-badge&logoColor=white)](https://anujghimireprojectfolio.vercel.app)
 
-> The live preview is hosted using **GitHub Pages** and displays the latest version of my learning work.
+> The live preview is hosted using **Vercel** and displays the latest version of my learning work.
 
 ---
 
