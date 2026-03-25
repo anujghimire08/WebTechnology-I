@@ -1,0 +1,13 @@
+to {
+  color: red;
+}
+from {
+  color: blue;
+}
+heading {
+  color: green;
+}
+body {
+  background: #000;
+  color: white;
+}
