@@ -1,9 +1,23 @@
 # Web Technology – I
 
-This repository documents my **learning journey in Web Development I**, a core subject in my college curriculum.  
-It contains all the **practice files, mini-projects, assignments, and updates** that I completed while learning the fundamentals of web development.
+**Tech Stack:**
 
-The purpose of this repository is to **track my academic progress**, **showcase what I learned**, and serve as a **reference for future revision and growth**.
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="40" height="40"/> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xml/xml-original.svg" alt="XML" width="40" height="40"/>  
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" alt="jQuery" width="40" height="40"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/BaseX-logo-small-transparent.png" alt="BaseX Logo" width="40" height="40"/>
+
+---
+
+This repository documents my **learning journey in Web Development I**, a core subject in my college curriculum. It contains all the **practice files, mini-projects, assignments, and updates** that I completed while learning the fundamentals of web development.
+
+The purpose of this repository is to:
+
+- **Track my academic progress**
+- **Showcase what I learned**
+- Serve as a **reference for future revision and growth**
 
 ---
 
@@ -36,13 +50,13 @@ Throughout this subject, I learned and practiced:
 - Basic page layout techniques
 - Clean and readable code structure
 - Organizing files and folders professionally
-- cascading style sheets (i.e CSS)
+- Cascading Style Sheets (CSS)
 
 ---
 
 ## 📂 Repository Structure
 
-```
+```text
 📦WebTechnology-I
  ┣ 📂Audio
  ┃ ┗ 📜The Foundation of Web Pages.mp3
@@ -85,154 +99,4 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜FlexOrder.html
  ┃ ┃ ┃ ┣ 📜FlexShrink.html
  ┃ ┃ ┃ ┗ 📜FlexWrap.html
- ┃ ┃ ┣ 📂Float Property
- ┃ ┃ ┃ ┣ 📜Float.css
- ┃ ┃ ┃ ┗ 📜FloatProperty.html
- ┃ ┃ ┣ 📂Fonts and Color Property
- ┃ ┃ ┃ ┣ 📜BackgroundColor.html
- ┃ ┃ ┃ ┣ 📜ColorTheory.html
- ┃ ┃ ┃ ┣ 📜FontandColor.html
- ┃ ┃ ┃ ┣ 📜FontProperty.html
- ┃ ┃ ┃ ┗ 📜IconFonts.html
- ┃ ┃ ┣ 📂Grid
- ┃ ┃ ┃ ┗ 📜LayoutGrid.html
- ┃ ┃ ┣ 📂Image Property
- ┃ ┃ ┃ ┣ 📜Height-Width.html
- ┃ ┃ ┃ ┣ 📜Image.html
- ┃ ┃ ┃ ┗ 📜VisibilityProperty.html
- ┃ ┃ ┣ 📂Media Queries
- ┃ ┃ ┃ ┗ 📜Media.html
- ┃ ┃ ┣ 📂Others
- ┃ ┃ ┃ ┣ 📜alignment-baseline.html
- ┃ ┃ ┃ ┣ 📜aspect-ratio.html
- ┃ ┃ ┃ ┣ 📜backdrop-filter.html
- ┃ ┃ ┃ ┗ 📜Custom properties.html
- ┃ ┃ ┣ 📂Pseudo Classes
- ┃ ┃ ┃ ┣ 📜Link-Pseudo-classes.html
- ┃ ┃ ┃ ┣ 📜pseudo.css
- ┃ ┃ ┃ ┗ 📜pseudo.html
- ┃ ┃ ┣ 📂Relative Units
- ┃ ┃ ┃ ┣ 📜EM.html
- ┃ ┃ ┃ ┣ 📜Percentage.html
- ┃ ┃ ┃ ┣ 📜REM.html
- ┃ ┃ ┃ ┗ 📜Viewport.html
- ┃ ┃ ┣ 📂Selector
- ┃ ┃ ┃ ┣ 📜ClassSelector.html
- ┃ ┃ ┃ ┣ 📜Defination.txt
- ┃ ┃ ┃ ┣ 📜DescendantSelector.html
- ┃ ┃ ┃ ┣ 📜ElementSelector.html
- ┃ ┃ ┃ ┣ 📜GroupSelector.html
- ┃ ┃ ┃ ┣ 📜IdSelector.html
- ┃ ┃ ┃ ┗ 📜UniversalSelector.html
- ┃ ┃ ┣ 📂Text Property
- ┃ ┃ ┃ ┣ 📜LineHeight.html
- ┃ ┃ ┃ ┣ 📜TextAlign.html
- ┃ ┃ ┃ ┣ 📜TextDecoration.html
- ┃ ┃ ┃ ┗ 📜TextTransform.html
- ┃ ┃ ┣ 📂TextWrap
- ┃ ┃ ┃ ┗ 📜index.html
- ┃ ┃ ┗ 📂Transitions
- ┃ ┃ ┃ ┣ 📂Animation
- ┃ ┃ ┃ ┃ ┣ 📜Animation.html
- ┃ ┃ ┃ ┃ ┗ 📜Animation1.html
- ┃ ┃ ┃ ┣ 📜TransformRotate.html
- ┃ ┃ ┃ ┣ 📜TransformScale.html
- ┃ ┃ ┃ ┣ 📜TransformSkew.html
- ┃ ┃ ┃ ┣ 📜TransformTranslate.html
- ┃ ┃ ┃ ┣ 📜Transition.css
- ┃ ┃ ┃ ┗ 📜Transition.html
- ┃ ┣ 📂HTML
- ┃ ┃ ┣ 📂Form Task
- ┃ ┃ ┃ ┣ 📜formtask.html
- ┃ ┃ ┃ ┗ 📜Form_task.pdf
- ┃ ┃ ┣ 📂media
- ┃ ┃ ┃ ┣ 📜Html.mp4
- ┃ ┃ ┃ ┗ 📜The Foundation of Web Pages.mp3
- ┃ ┃ ┗ 📜index.html
- ┃ ┣ 📂JavaScript
- ┃ ┃ ┣ 📂Calculator
- ┃ ┃ ┃ ┣ 📜app.js
- ┃ ┃ ┃ ┣ 📜blackboard.jpg
- ┃ ┃ ┃ ┣ 📜index.html
- ┃ ┃ ┃ ┗ 📜style.css
- ┃ ┃ ┣ 📂MailPasswordValidator
- ┃ ┃ ┃ ┣ 📜mailpass.css
- ┃ ┃ ┃ ┣ 📜mailpass.html
- ┃ ┃ ┃ ┗ 📜mailpass.js
- ┃ ┃ ┣ 📂OTPVerification
- ┃ ┃ ┃ ┣ 📜app.js
- ┃ ┃ ┃ ┣ 📜Flag_of_Nepal.png
- ┃ ┃ ┃ ┣ 📜index.html
- ┃ ┃ ┃ ┣ 📜opt.png
- ┃ ┃ ┃ ┣ 📜otp.css
- ┃ ┃ ┃ ┣ 📜otp.html
- ┃ ┃ ┃ ┣ 📜otp.js
- ┃ ┃ ┃ ┣ 📜phone.png
- ┃ ┃ ┃ ┗ 📜style.css
- ┃ ┃ ┗ 📂PasswordStrengthChecker
- ┃ ┃ ┃ ┣ 📜passwordstrengthchecker.html
- ┃ ┃ ┃ ┗ 📜passwordstrengthchecker.js
- ┃ ┣ 📂Lab Work
- ┃ ┃ ┣ 📂Lab-1
- ┃ ┃ ┃ ┣ 📜QN-1.html
- ┃ ┃ ┃ ┣ 📜QN-2.html
- ┃ ┃ ┃ ┣ 📜QN-3.html
- ┃ ┃ ┃ ┣ 📜QN-4.html
- ┃ ┃ ┃ ┣ 📜QN-5.html
- ┃ ┃ ┃ ┗ 📜QN-6.html
- ┃ ┃ ┣ 📂Lab-2
- ┃ ┃ ┃ ┣ 📜QN-10 Table Output.png
- ┃ ┃ ┃ ┣ 📜QN-10.html
- ┃ ┃ ┃ ┣ 📜QN-7.html
- ┃ ┃ ┃ ┣ 📜QN-8.html
- ┃ ┃ ┃ ┗ 📜QN-9.html
- ┃ ┃ ┣ 📂Lab-3
- ┃ ┃ ┃ ┣ 📜QN-11.html
- ┃ ┃ ┃ ┗ 📜QN-12.html
- ┃ ┃ ┣ 📂Lab-4
- ┃ ┃ ┃ ┣ 📜cssSelector.html
- ┃ ┃ ┃ ┣ 📜cssType.css
- ┃ ┃ ┃ ┗ 📜cssType.html
- ┃ ┃ ┣ 📂Lab-5
- ┃ ┃ ┃ ┣ 📜boxmodel.html
- ┃ ┃ ┃ ┣ 📜DevicePreview.png
- ┃ ┃ ┃ ┣ 📜Lab 5 Preview.docx
- ┃ ┃ ┃ ┣ 📜mediaquery.css
- ┃ ┃ ┃ ┣ 📜mediaquery.html
- ┃ ┃ ┃ ┣ 📜positioning.html
- ┃ ┃ ┃ ┗ 📜tablestyling.html
- ┃ ┃ ┗ 📂Lab-6
- ┃ ┃ ┃ ┣ 📜app.js
- ┃ ┃ ┃ ┣ 📜branchingStatement.html
- ┃ ┃ ┃ ┣ 📜branchingStatement.js
- ┃ ┃ ┃ ┣ 📜linkjs.html
- ┃ ┃ ┃ ┣ 📜loopStatement.html
- ┃ ┃ ┃ ┣ 📜loopStatement.js
- ┃ ┃ ┃ ┣ 📜operators.html
- ┃ ┃ ┃ ┣ 📜primitivetype.html
- ┃ ┃ ┃ ┗ 📜primitivetype.js
- ┃ ┗ 📜Note.txt
- ┣ 📂DynamicThemeSwitch
- ┃ ┣ 📜app.js
- ┃ ┣ 📜index.html
- ┃ ┗ 📜style.css
- ┣ 📂HamroWebClone
- ┃ ┣ 📂images
- ┃ ┃ ┣ 📜HamroIX.jpg
- ┃ ┃ ┗ 📜script.js
- ┃ ┣ 📜index.html
- ┃ ┗ 📜style.css
- ┣ 📂images
- ┃ ┣ 📜calculator.png
- ┃ ┣ 📜hamro.png
- ┃ ┣ 📜login.png
- ┃ ┣ 📜otp.png
- ┃ ┣ 📜profile.jpg
- ┃ ┣ 📜social.png
- ┃ ┗ 📜theme.png
- ┣ 📂Video
- ┃ ┗ 📜Html.mp4
- ┣ 📜HTML Course Certificate.pdf
- ┣ 📜index.html
- ┗ 📜README.md
 ```
