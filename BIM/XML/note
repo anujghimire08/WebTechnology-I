@@ -1,0 +1,6 @@
+for $x in doc("budget.xml")//item
+return $x/name
+
+
+for $x in doc("budget.xml")//category[@name="Food"]/item
+return $x/amount

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<budget year="2026" currency="NPR">
+
+<owner>
+    <name>xyz</name>
+    <type>Personal</type>
+</owner>
+
+<income>
+    <source id="I001">
+        <type>Salary</type>
+        <amount>50000</amount>
+    </source>
+    <source id="I002">
+        <type>Side Hustle</type>
+        <amount>10000</amount>
+    </source>
+</income>
+
+<expenses>
+
+    <category name="Housing">
+        <item>
+            <name>Rent</name>
+            <amount>15000</amount>
+        </item>
+    </category>
+
+    <category name="Food">
+        <item>
+            <name>Groceries</name>
+            <amount>8000</amount>
+        </item>
+        <item>
+            <name>Eating Out</name>
+            <amount>3000</amount>
+        </item>
+    </category>
+
+    <category name="Transport">
+        <item>
+            <name>Fuel</name>
+            <amount>4000</amount>
+        </item>
+    </category>
+
+    <category name="Utilities">
+        <item>
+            <name>Electricity</name>
+            <amount>2000</amount>
+        </item>
+        <item>
+            <name>Internet</name>
+            <amount>1500</amount>
+        </item>
+    </category>
+
+    <category name="Entertainment">
+        <item>
+            <name>Movies</name>
+            <amount>1000</amount>
+        </item>
+    </category>
+
+</expenses>
+
+<summary>
+    <totalIncome>60000</totalIncome>
+    <totalExpense>34500</totalExpense>
+    <savings>25500</savings>
+</summary>
+
+</budget>
