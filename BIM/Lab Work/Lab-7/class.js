@@ -6,12 +6,13 @@ class person{
       this.#phone = phone;
   }
   fullinfo = () => {
-     alert(this.name + "," + this.address);
+     console.log(this.name + "," + this.address);
   }
   getNumber(){
-    alert(this.#phone);
+    console.log(this.#phone);
   }
 }
 
 const p1 = new person("anuj","BRT",6232832);
 p1.fullinfo();
+p1.getNumber();

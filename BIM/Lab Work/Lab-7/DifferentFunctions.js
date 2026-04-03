@@ -1,29 +1,32 @@
 // function without parameter
-function hello(){
-  alert("Hello");
+function hellod(){
+  console.log("Hello");
 }
-hello();
+hellod();
 
 // function with parameter
 function hello(name){
-  alert(`Hello${name}`);
+  console.log(`Hello${name}`);
 }
 hello("anuj");
 
 // unnamed function without parameter
-const hello1 = ()=> alert("hello");
+const hello1 = ()=> console.log("hello");
 hello1();
 
 // unnamed function with parameter
 const hello2 = (number)=>{
-  alert(number);
+  console.log(number);
 }
 hello2(38744389);
 
 // function return
 const randomNumber = ()=> Math.random();
+console.log(randomNumber());
+
   
 // function with default value
 function bye(name ="Anuj"){
-  console.log(name);
+  console.log(name + " Byee");
 }
+bye();
