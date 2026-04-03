@@ -1,11 +1,15 @@
 class person{
+  #phone;
   constructor(name,address,phone){
     this.name = name;
       this.address = address;
-      this.phone = phone;
+      this.#phone = phone;
   }
   fullinfo = () => {
-     alert(nam, address,phone);
+     alert(this.name + "," + this.address);
+  }
+  getNumber(){
+    alert(this.#phone);
   }
 }
 
