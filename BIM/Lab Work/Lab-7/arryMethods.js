@@ -1,17 +1,29 @@
-let arr = [1, 2, 3, 4, 5];
+let arr = [49, -1, 6, 9, 2];
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
+// add at last of arr
+arr.push(6);
+console.log(arr);
 
-arr.forEach((val) => console.log(val));
+// delete at last of arr
+arr.pop();
+console.log(arr);
 
-for (let index in arr) {
-  console.log(index);
-}
+// add at first of arr
+arr.unshift(0);
+console.log(arr);
 
-for (let val of arr) {
-  console.log(val);
-}
+// delete at first of arr
+arr.shift();
+console.log(arr);
 
-arr.map((val) => console.log(val));
+// reverse arr
+arr.reverse();
+console.log(arr);
+
+// array sort
+arr.sort((a,b) => a-b);
+console.log(arr);
+
+
+
+
