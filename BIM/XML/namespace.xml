@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root 
+  xmlns:h="http://www.w3.org/TR/html4/"
+  xmlns:f="http://www.abc.com/furniture">
+  <h:table>
+    <h:tr>
+      <h:td>Apples</h:td>
+    </h:tr>
+  </h:table>
+  <f:table>
+    <f:name>African Coffee Table</f:name>
+  </f:table>
+  <f:table>
+    <f:name>Nepali Bamboo Table</f:name>
+  </f:table>
+</root>

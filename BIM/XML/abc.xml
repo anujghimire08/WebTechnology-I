@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<note id="10">
+  <to>Ram</to>
+  <from>Shyam</from>
+  <!-- <date>2026-03-30</date> -->
+  <date>
+    <year>2026</year>
+    <month>03</month>
+    <day>30</day>
+  </date>
+</note>

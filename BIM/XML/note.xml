@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="note.xsl"?>
+<!-- <!DOCTYPE note SYSTEM "note.dtd"> -->
+<!-- <note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="note.xsd"> -->
+<note>
+  <to>Bibidh</to>
+  <from>Nischal</from>
+  <heading>Meeting</heading>
+  <body>Don't forget tomorrow.</body>
+</note>

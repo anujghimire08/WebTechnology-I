@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE root [
+  <!ELEMENT root (person*)>
+  <!ELEMENT person EMPTY>
+  <!ATTLIST person
+    id ID #REQUIRED
+    gender (male|female) "male"
+    age CDATA #IMPLIED>
+]>
+<root>
+  <person id="p1" gender="male" age="30"/>
+  <person id="p2" gender="female"/>
+</root>

@@ -1,0 +1,13 @@
+
+<?xml version="1.0"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="advancenote.xsd"
+      id="1001">
+  <to>Ram</to>
+  <from>Shyam</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+  <date>2026-03-30</date>
+  <priority>3.5</priority>
+  <urgent>false</urgent>
+</note>
