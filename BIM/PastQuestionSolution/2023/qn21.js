@@ -2,16 +2,16 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit",(e)=>{
 e.preventDefault();
-const userId = document.getElementById("userid").value.trim();
+const userId = Number(document.getElementById("userid").value.trim());
 const phone = document.getElementById("phone").value.trim();
 const mail = document.getElementById("email").value.trim();
 const password = document.getElementById("password").value.trim();
 const cpassword = document.getElementById("confirm").value.trim();
 
 // user id validation
-if(isNaN(userId)|| !userId){
-  alert("userid must be number");
-  return;
+if(userId <= 0){
+    alert("User ID must be greater than 0");
+    return;
 }
 
 // phone number validation
