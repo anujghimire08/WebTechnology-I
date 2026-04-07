@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form{
+  width: 40%;
+  padding: 40px;
+  border: 1px solid;
+  margin: 20px auto;
+}
