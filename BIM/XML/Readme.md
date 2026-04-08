@@ -34,14 +34,11 @@
 
 ---
 
-## 📏 Rules of XML
+### ✔️ Basic Rules
 
 * XML structure follows a **tree structure**.
 * It must have **only one root element**.
 * All elements can have **child elements**.
-
-### ✔️ Basic Rules
-
 * Every tag must have a **closing tag**.
 * XML tags are **case-sensitive**.
 * Attribute values must always be **quoted**.
@@ -49,6 +46,24 @@
 * Tag name conflicts can be solved using **prefixes (namespaces)**.
 
 ---
+
+element
+xml document contains xml elements.
+xml elements is everything inside including opening & closing tags
+
+add example
+
+element can contain text,attribute,other element or mix
+
+empty element -> self closing tag
+add eg here
+
+
+add xml naming rules
+
+
+xml attributes
+info about it
 
 ## 🌳 Example of XML Structure
 
@@ -91,18 +106,25 @@
 </f:table>
 ```
 
+also give eg of default namespace along with defination
 ---
 
 ## 🌐 XML Namespaces
 
 * Used to **avoid tag name conflicts**.
 * Defined using the `xmlns` attribute.
+* `xmlns` gives prefix a qualified namespace.
+* Namespace `xmlns` can be declared in the XML root element.
+
+---
+URI info
 
 ### 🔸 Syntax
 
 ```xml
 xmlns:prefix="URI"
 ```
+
 
 ### 🔸 Example
 
@@ -124,15 +146,15 @@ xmlns:prefix="URI"
   * Receive data
   * Send data to server
 
-### 🔸 Example with Steps
-
+### 🔸 Example GET XML using XMLHttpRequest (XHR)
 ```javascript
 // Step 1: Create object
 let xhttp = new XMLHttpRequest();
 
 // Step 2: Define callback function
-xhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
+// onload triggered when request (readystate) finished & response is received
+xhttp.onload = function () {
+  if (this.status == 200) {
     // Step 3: Display response
     document.getElementById("demo").innerHTML = this.responseText;
   }
@@ -143,6 +165,44 @@ xhttp.open("GET", "data.xml", true);
 
 // Step 5: Send request
 xhttp.send();
+```
+
+### 🔸 Example POST XML using XMLHttpRequest (XHR)
+
+```javascript
+// Create a new XMLHttpRequest object
+const xhr = new XMLHttpRequest();
+
+// Define the server endpoint
+const url = "https://example.com/api";
+
+// Prepare the XML data to send
+const xmlData = `
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+    <id>123</id>
+    <name>Anuj Ghimire</name>
+    <email>anuj@example.com</email>
+</user>
+`;
+
+// Initialize the POST request
+xhr.open("POST", url, true);
+
+// Set the Content-Type header to XML
+xhr.setRequestHeader("Content-Type", "application/xml");
+
+// Handle the server response
+xhr.onload = function() {
+    if (xhr.status >= 200 && xhr.status < 300) {
+        console.log("Response:", xhr.responseText);
+    } else {
+        console.error("Error:", xhr.status, xhr.statusText);
+    }
+};
+
+// Send the XML data
+xhr.send(xmlData);
 ```
 
 ---
@@ -188,6 +248,9 @@ let value = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 ## 🔎 XML XPath
 
 * XPath is used to **navigate through XML elements and attributes**
+use path expression to select node and node sets
+xpath expression can be used in javascript, java,php,python,xmlSchema,c etc.
+more info about xpath...
 
 ### 🔸 Example
 
@@ -208,7 +271,142 @@ let value = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 
 ---
 
-## ✅ Key Points
+## 🔹 XSLT (Extensible Stylesheet Language Transformations)
+
+### 📌 What is XSLT?
+- XSLT is used to transform XML into HTML or other formats.
+- It separates data from presentation.
+
+---
+
+### 📌 Example (with comments)
+
+#### XML File (data.xml)
+```xml
+<students>
+  <student>
+    <name>Anuj</name> <!-- student name -->
+    <age>21</age> <!-- student age -->
+  </student>
+</students>
+```
+
+#### XSLT File (style.xsl)
+```xml
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+  <!-- Template that matches root element -->
+  <xsl:template match="/">
+    <html>
+      <body>
+        <h2>Student List</h2>
+
+        <!-- Loop through each student -->
+        <ul>
+          <xsl:for-each select="students/student">
+            <li>
+              <!-- Extract name -->
+              <xsl:value-of select="name"/> -
+
+              <!-- Extract age -->
+              <xsl:value-of select="age"/>
+            </li>
+          </xsl:for-each>
+        </ul>
+
+      </body>
+    </html>
+  </xsl:template>
+
+</xsl:stylesheet>
+```
+
+---
+
+## 🔹 XQuery (XML Query Language)
+* Purpose: Query and extract data from XML documents (like SQL for XML).
+* Use Case: Retrieve specific data from XML databases.
+
+### 📌 Example (with comments)
+
+#### XML File
+```xml
+<students>
+  <student>
+    <name>Anuj</name> <!-- student name -->
+    <marks>80</marks> <!-- marks -->
+  </student>
+  <student>
+    <name>Ram</name>
+    <marks>60</marks>
+  </student>
+</students>
+```
+
+#### XQuery
+```xquery
+for $x in doc("students.xml")/students/student
+(: loop through each student :)
+
+where $x/marks > 70
+(: filter students with marks > 70 :)
+
+return $x/name
+(: return only the name element :)
+```
+
+---
+
+## 🔹 XLink
+* Purpose: Define links inside XML documents.
+* Use Case: Link XML elements to resources, multiple links, or metadata.
+
+### 📌 Example (with comments)
+
+```xml
+<book xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <title>XML Guide</title>
+
+  <!-- XLink hyperlink -->
+  <link xlink:type="simple"   <!-- simple link type -->
+        xlink:href="https://example.com" <!-- destination URL -->
+        xlink:show="new"  <!-- open in new window -->
+        xlink:actuate="onRequest"> <!-- activate on click -->
+    Visit Website
+  </link>
+
+</book>
+```
+
+---
+
+## 🔹XPointer (XML Pointer Language)
+* Purpose: Points to specific parts of an XML document.
+* Built on: XPath.
+* Use Case: Select a node or attribute from a large XML file.
+
+### 📌 Example (with comments)
+
+#### XML File
+```xml
+<students>
+  <student id="s1"> <!-- unique ID -->
+    <name>Anuj</name>
+  </student>
+</students>
+```
+
+#### XPointer
+```
+students.xml#xpointer(/students/student[@id='s1'])
+```
+
+<!-- Points to specific student using ID -->
+
+---
+
+# ✅ Summary
 
 * XML is **not a programming language**.
 * It is mainly used for:
@@ -216,6 +414,10 @@ let value = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
   * Data storage
   * Data transfer
 * XML is **extensible** → You can create your own tags.
+* XSLT → Transform XML into HTML  
+* XQuery → Query and extract XML data  
+* XLink → Create hyperlinks in XML  
+* XPointer → Locate specific parts of XML  
 
 ---
 
