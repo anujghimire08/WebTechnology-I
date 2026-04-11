@@ -1,0 +1,36 @@
+<!-- Create an HTML form with fields name, email, country, gender. Make name and email textbox type,country select box and gender radio button. Now write a JavaScript code to validate form with following details to validate form with following details.
+a. Name must contain only alphabets and space and must be 8 character.
+b. Email should be valid.
+c. Gender must be checked.
+d. At least one country must be selected. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <h1>Form Validation</h1>
+    <form onsubmit="validationHandler(event)">
+      <input type="text" placeholder="username" id="user-name" />
+      <input type="text" placeholder="username@gmail.com" id="email" />
+      <select id="country">
+        <option value="" disabled selected>Choose Country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="US">US</option>
+        <option value="China">China</option>
+        <option value="Brazil">Brazil</option>
+      </select>
+      <label for="male"
+        ><input type="radio" value="male" name="gender" />Male</label
+      >
+      <label for="female"
+        ><input type="radio" value="female" name="gender" />Female</label
+      >
+      <button>Submit</button>
+    </form>
+    <script src="qn21.js"></script>
+  </body>
+</html>
