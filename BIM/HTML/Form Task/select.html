@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Tag</title>
+  </head>
+  <body>
+    <select>
+      <option value="" disabled selected>Choose Country</option>
+      <option value="Nepal">Nepal</option>
+      <option value="United States">United States</option>
+      <option value="Japan">Japan</option>
+      <option value="India">India</option>
+    </select>
+    <script>
+      document
+        .querySelector("select")
+        .addEventListener("change", () =>
+          console.log(document.querySelector("select").value),
+        );
+    </script>
+  </body>
+</html>
