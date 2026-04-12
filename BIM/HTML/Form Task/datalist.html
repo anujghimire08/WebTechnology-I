@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalist el</title>
+  </head>
+  <body>
+    <h1>Provides auto complete options</h1>
+    <input type="text" list="country" />
+    <datalist id="country">
+      <option value="Nepal"></option>
+      <option value="United States"></option>
+      <option value="Japan"></option>
+      <option value="India"></option>
+    </datalist>
+    <script>
+      document
+        .querySelector("input")
+        .addEventListener("change", () =>
+          console.log(document.querySelector("input").value),
+        );
+    </script>
+  </body>
+</html>
