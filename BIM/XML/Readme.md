@@ -2,11 +2,11 @@
 
 ## 🔹 What is XML?
 
-* XML is a **software and hardware independent tool** for storing and transporting data.
-* It is designed to be **self-descriptive**.
-* XML **does not do anything** (it only stores data).
-* XML is just **information wrapped inside tags**, so machines can understand it easily.
-* XML is recommended by the **W3C (World Wide Web Consortium)**.
+- XML is a **software and hardware independent tool** for storing and transporting data.
+- It is designed to be **self-descriptive**.
+- XML **does not do anything** (it only stores data).
+- XML is just **information wrapped inside tags**, so machines can understand it easily.
+- XML is recommended by the **W3C (World Wide Web Consortium)**.
 
 ---
 
@@ -16,11 +16,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
-* This is called the **prolog**.
-* It defines:
-
-  * XML version
-  * Character encoding
+- This is called the **prolog**.
+- It defines:
+  - XML version
+  - Character encoding
 
 ---
 
@@ -36,36 +35,36 @@
 
 ### ✔️ Basic Rules
 
-* XML structure follows a **tree structure**.
-* It must have **only one root element**.
-* All elements can have **child elements**.
-* Every tag must have a **closing tag**.
-* XML tags are **case-sensitive**.
-* Attribute values must always be **quoted**.
-* Comments must not contain **two dashes (`--`) inside**.
-* Tag name conflicts can be solved using **prefixes (namespaces)**.
+- XML structure follows a **tree structure**.
+- It must have **only one root element**.
+- All elements can have **child elements**.
+- Every tag must have a **closing tag**.
+- XML tags are **case-sensitive**.
+- Attribute values must always be **quoted**.
+- Comments must not contain **two dashes (`--`) inside**.
+- Tag name conflicts can be solved using **prefixes (namespaces)**.
 
 ---
 
-element
-xml document contains xml elements.
-xml elements is everything inside including opening & closing tags
+# 📘 XML Elements, Attributes & Naming Rules
 
-add example
+## 📌 XML Elements
 
-element can contain text,attribute,other element or mix
+An **XML element** is everything from the opening tag to the closing tag, including content.
 
-empty element -> self closing tag
-add eg here
+👉 XML documents are made up of XML elements.
 
+## 🧱 Definition
 
-add xml naming rules
+An XML element includes:
 
+- Opening tag
+- Content
+- Closing tag
 
-xml attributes
-info about it
+---
 
-## 🌳 Example of XML Structure
+## 💡 Example of XML Element
 
 ```xml
 <student>
@@ -106,25 +105,32 @@ info about it
 </f:table>
 ```
 
-also give eg of default namespace along with defination
+## Default Namespace in XML
+
+## 📌 Definition
+
+A **default namespace** in XML is a namespace that is declared without a prefix using the `xmlns` attribute.  
+It applies to all elements within the scope of that element, unless a different namespace is specified.
+
+👉 It helps avoid naming conflicts between elements from different XML vocabularies.
+
 ---
 
-## 🌐 XML Namespaces
-
-* Used to **avoid tag name conflicts**.
-* Defined using the `xmlns` attribute.
-* `xmlns` gives prefix a qualified namespace.
-* Namespace `xmlns` can be declared in the XML root element.
-
----
-URI info
-
-### 🔸 Syntax
+## 🧱 Syntax
 
 ```xml
+<root xmlns="namespace-URI">
+
+
 xmlns:prefix="URI"
 ```
 
+## 🌐 XML Namespaces
+
+- Used to **avoid tag name conflicts**.
+- Defined using the `xmlns` attribute.
+- `xmlns` gives prefix a qualified namespace.
+- Namespace `xmlns` can be declared in the XML root element.
 
 ### 🔸 Example
 
@@ -138,15 +144,15 @@ xmlns:prefix="URI"
 
 ## 🔌 XMLHttpRequest Object (AJAX)
 
-* Used to **request data from a web server**
-* Helps update a webpage **without reloading** (SPA)
-* Can:
-
-  * Request data
-  * Receive data
-  * Send data to server
+- Used to **request data from a web server**
+- Helps update a webpage **without reloading** (SPA)
+- Can:
+  - Request data
+  - Receive data
+  - Send data to server
 
 ### 🔸 Example GET XML using XMLHttpRequest (XHR)
+
 ```javascript
 // Step 1: Create object
 let xhttp = new XMLHttpRequest();
@@ -193,12 +199,12 @@ xhr.open("POST", url, true);
 xhr.setRequestHeader("Content-Type", "application/xml");
 
 // Handle the server response
-xhr.onload = function() {
-    if (xhr.status >= 200 && xhr.status < 300) {
-        console.log("Response:", xhr.responseText);
-    } else {
-        console.error("Error:", xhr.status, xhr.statusText);
-    }
+xhr.onload = function () {
+  if (xhr.status >= 200 && xhr.status < 300) {
+    console.log("Response:", xhr.responseText);
+  } else {
+    console.error("Error:", xhr.status, xhr.statusText);
+  }
 };
 
 // Send the XML data
@@ -209,7 +215,7 @@ xhr.send(xmlData);
 
 ## 🔍 XML Parsing
 
-* XML Parsing means **reading XML data and converting it into usable form**.
+- XML Parsing means **reading XML data and converting it into usable form**.
 
 ### 🔸 Example with Steps
 
@@ -230,12 +236,11 @@ console.log(name);
 
 ## 🌳 XML DOM (Document Object Model)
 
-* Represents XML as a **tree structure**
-* Allows:
-
-  * Access elements
-  * Modify elements
-  * Delete elements
+- Represents XML as a **tree structure**
+- Allows:
+  - Access elements
+  - Modify elements
+  - Delete elements
 
 ### 🔸 Example
 
@@ -247,10 +252,10 @@ let value = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
 
 ## 🔎 XML XPath
 
-* XPath is used to **navigate through XML elements and attributes**
-use path expression to select node and node sets
-xpath expression can be used in javascript, java,php,python,xmlSchema,c etc.
-more info about xpath...
+- XPath is used to **navigate through XML elements and attributes**
+  use path expression to select node and node sets
+  xpath expression can be used in javascript, java,php,python,xmlSchema,c etc.
+  more info about xpath...
 
 ### 🔸 Example
 
@@ -274,6 +279,7 @@ more info about xpath...
 ## 🔹 XSLT (Extensible Stylesheet Language Transformations)
 
 ### 📌 What is XSLT?
+
 - XSLT is used to transform XML into HTML or other formats.
 - It separates data from presentation.
 
@@ -282,6 +288,7 @@ more info about xpath...
 ### 📌 Example (with comments)
 
 #### XML File (data.xml)
+
 ```xml
 <students>
   <student>
@@ -292,6 +299,7 @@ more info about xpath...
 ```
 
 #### XSLT File (style.xsl)
+
 ```xml
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
@@ -324,12 +332,14 @@ more info about xpath...
 ---
 
 ## 🔹 XQuery (XML Query Language)
-* Purpose: Query and extract data from XML documents (like SQL for XML).
-* Use Case: Retrieve specific data from XML databases.
+
+- Purpose: Query and extract data from XML documents (like SQL for XML).
+- Use Case: Retrieve specific data from XML databases.
 
 ### 📌 Example (with comments)
 
 #### XML File
+
 ```xml
 <students>
   <student>
@@ -344,6 +354,7 @@ more info about xpath...
 ```
 
 #### XQuery
+
 ```xquery
 for $x in doc("students.xml")/students/student
 (: loop through each student :)
@@ -358,8 +369,9 @@ return $x/name
 ---
 
 ## 🔹 XLink
-* Purpose: Define links inside XML documents.
-* Use Case: Link XML elements to resources, multiple links, or metadata.
+
+- Purpose: Define links inside XML documents.
+- Use Case: Link XML elements to resources, multiple links, or metadata.
 
 ### 📌 Example (with comments)
 
@@ -382,13 +394,15 @@ return $x/name
 ---
 
 ## 🔹XPointer (XML Pointer Language)
-* Purpose: Points to specific parts of an XML document.
-* Built on: XPath.
-* Use Case: Select a node or attribute from a large XML file.
+
+- Purpose: Points to specific parts of an XML document.
+- Built on: XPath.
+- Use Case: Select a node or attribute from a large XML file.
 
 ### 📌 Example (with comments)
 
 #### XML File
+
 ```xml
 <students>
   <student id="s1"> <!-- unique ID -->
@@ -398,6 +412,7 @@ return $x/name
 ```
 
 #### XPointer
+
 ```
 students.xml#xpointer(/students/student[@id='s1'])
 ```
@@ -408,16 +423,16 @@ students.xml#xpointer(/students/student[@id='s1'])
 
 # ✅ Summary
 
-* XML is **not a programming language**.
-* It is mainly used for:
+- XML is **not a programming language**.
+- It is mainly used for:
+  - Data storage
+  - Data transfer
 
-  * Data storage
-  * Data transfer
-* XML is **extensible** → You can create your own tags.
-* XSLT → Transform XML into HTML  
-* XQuery → Query and extract XML data  
-* XLink → Create hyperlinks in XML  
-* XPointer → Locate specific parts of XML  
+- XML is **extensible** → You can create your own tags.
+- XSLT → Transform XML into HTML
+- XQuery → Query and extract XML data
+- XLink → Create hyperlinks in XML
+- XPointer → Locate specific parts of XML
 
 ---
 
