@@ -1,0 +1,8 @@
+<? xml version="1.0" encoding="UTF-8"?> // prolog
+<!DOCTYPE book SYSTEM "book.dtd">
+<book>
+    <title>Web Technology</title>
+    <author>John Doe</author>
+    <price>500</price>
+    <date>2026-04-13</date>
+</book>
