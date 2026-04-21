@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuj Ghimire Projectfolio</title>
+    <link rel="icon" href="assets/images/profile.jpg" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100dvh;
+      }
+
+      .container {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+      }
+
+      #user-info {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      #user-info img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      #name-tick {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+      }
+      span {
+        font-style: italic;
+        &:hover {
+          color: #1490f1;
+        }
+      }
+      span:hovr {
+        font-style: italic;
+      }
+
+      #name-tick img {
+        width: 22px;
+        height: 22px;
+        margin-top: 0.5rem;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      #username {
+        font-size: 2rem;
+      }
+
+      #user-description p {
+        color: gray;
+        font-size: 1rem;
+      }
+
+      #social-medias {
+        margin-top: 0.6rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      #social-medias a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        transition: all 0.42s ease-in-out;
+      }
+
+      h2 {
+        margin: 0.8rem 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+
+      #projects {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding: 0 10px;
+        gap: 1rem;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 20px 15px;
+        border: 1px solid gray;
+        border-radius: 0.5rem;
+        box-shadow:
+          0px 2px 2px rgba(0, 0, 0, 0.4),
+          0px 4px 4px rgba(0, 0, 0, 0.5);
+        transition: all 0.42s ease-in-out;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      #social-medias a:hover {
+        transform: scale(1.4);
+      }
+      .card:hover {
+        transform: translateY(-8px);
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #project-info h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+      }
+
+      #project-info p {
+        color: gray;
+        font-size: 1rem;
+      }
+
+      .card-footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0.2rem;
+      }
+
+      .card-footer a {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid gray;
+        padding: 4px 8px;
+        text-decoration: none;
+        border-radius: 0.2rem;
+        font-weight: 500;
+        color: rgb(76, 76, 76);
+        transition: all 0.2s ease;
+      }
+
+      .card-footer a:hover {
+        color: #1490f1;
+      }
+
+      .card-footer a:hover i {
+        transform: translateY(-2px);
+      }
+
+      #image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #image-container img {
+        width: 100%;
+        max-width: 320px;
+      }
+      @media (max-width: 768px) {
+        #user-info img {
+          height: 100px;
+          width: 100px;
+        }
+        #username {
+          font-size: 1rem;
+          font-size: 20px;
+        }
+        #name-tick img {
+          width: 22px;
+          height: 22px;
+          margin-top: 0rem;
+        }
+        #social-medias a {
+          font-size: 0.8rem;
+        }
+        #user-description p {
+          font-size: 0.8rem;
+        }
+        #social-medias {
+          gap: 0.2rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="user-info">
+        <img src="assets/images/profile.jpg" alt="anuj's profile" />
+        <div id="user-description">
+          <div id="name-tick">
+            <h1 id="username">Anuj Ghimire</h1>
+            <img src="assets/images/social.png" alt="verified" />
+          </div>
+          <div id="social-medias">
+            <a href="https://www.anujghimire.com.np" title="Website"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/anujghimire08"
+              title="Linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/anujghimire08" title="Github"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a href="https://x.com/AnujGhimire" title="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="mailto:contact.anujghimire@gmail.com" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2>
+        Selection of projects based on learning objectives and skills gained
+      </h2>
+
+      <div id="projects">
+        <!-- 1 -->
+        <div class="card">
+          <div id="image-container">
+            <img src="assets/images/otp.png" alt="opt validator app" />
+          </div>
+
+          <div id="project-info">
+            <h1 id="title">Mobile OTP Verification</h1>
+            <p id="sub-title">
+              A simple, interactive web application to verify Nepalese mobile
+              numbers using OTP. Users can input their mobile number, receive a
+              4-digit OTP, and validate it. Perfect for learning form
+              validation, localStorage, and JavaScript input handling.
+            </p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Projects/OTPVerification/index.html" target="_blank">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+          <div id="image-container">
+            <img src="assets/images/hamro.png" alt="hamro.com clone" />
+          </div>
+
+          <div id="project-info">
+            <h1 id="title">Hamro WebClone</h1>
+            <p id="sub-title">
+              Developed front-end clone of the Hamro.com platform, replicating
+              its core user interface and layout using HTML5 and CSS3. The
+              project showcases a multi-service portal design that includes
+              sections such as Online Radio, Forex Exchange, Baby Names.
+            </p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Projects/HamroWebClone/index.html" target="_blank">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+          <div id="image-container">
+            <img src="assets/images/theme.png" alt="theme switcher app" />
+          </div>
+
+          <div id="project-info">
+            <h1 id="title">Dynamic Theme Switch</h1>
+            <p id="sub-title">
+              Developed a responsive web application that allows users to
+              dynamically switch between multiple color themes (Light, Pink,
+              Blue, Green, and Dark). The project utilizes modern CSS variables
+              and the advanced :has() selector for real-time styling
+            </p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Projects/DynamicThemeSwitch/index.html" target="_blank">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card">
+          <div id="image-container">
+            <img src="assets/images/calculator.png" alt="calculator app" />
+          </div>
+
+          <div id="project-info">
+            <h1 id="title">Arithmetic Calculator</h1>
+            <p id="sub-title">
+              Developed a fully functional Arithmetic Calculator web application
+              using HTML, CSS, and JavaScript. The project allows users to
+              perform basic arithmetic operations including addition,
+              subtraction, multiplication, and division.
+            </p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Projects/Calculator/index.html" target="_blank">
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card">
+          <div id="image-container">
+            <img src="assets/images/login.png" alt="login app" />
+          </div>
+
+          <div id="project-info">
+            <h1 id="title">Login Validation</h1>
+            <p id="sub-title">
+              Developed a Login Validation Web Application using regular
+              expressions that validates user credentials using HTML, CSS, and
+              JavaScript. This project ensures that users enter a properly
+              formatted email and a strong password before submission.
+            </p>
+          </div>
+
+          <div class="card-footer">
+            <a
+              href="Projects/MailPasswordValidator/mailpass.html"
+              target="_blank"
+            >
+              Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
