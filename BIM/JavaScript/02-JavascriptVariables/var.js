@@ -11,4 +11,5 @@ function demo() {
  * Can be redeclared
  * Function scoped
  * visible inside whole function
+ * No TDZ
  */
