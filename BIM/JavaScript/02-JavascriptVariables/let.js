@@ -11,4 +11,5 @@ function demo() {
  * Cannot redeclare in same scope
  * Block scoped { }
  * recommended for changing values
+ * TDZ
  */
