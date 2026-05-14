@@ -38,3 +38,9 @@ conform to expected formats.
 ```
 `y` (sticky): Matches only from the last index where a previous match ended.
 ```
+
+**Character Classes**: Defining sets of characters to match [abc].
+Ranges within character classes [a-z] or [0-9].
+Combined ranges within character classes [a-z0-9]Negated character classes [^abc].
+
+🔗 [Regex101 Character Classes Practice Workspace](https://regex101.com/r/bdhlwK/1)
