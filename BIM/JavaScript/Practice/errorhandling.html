@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+
+      try {
+        console.log(a / b);
+      } catch (err) {
+        console.log("error found " + err.message);
+        console.log("hello");
+      }
+      try {
+        if (a < 18) {
+          throw "invalid age for liscence";
+        }
+      } catch (e) {
+        console.log(e);
+      } finally {
+        console.log("execution done");
+      }
+    </script>
+  </body>
+</html>
