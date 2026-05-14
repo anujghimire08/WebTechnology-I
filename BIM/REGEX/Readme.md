@@ -14,3 +14,25 @@ conform to expected formats.
 - **Meta Characters**: character with special meaning, like `. ^ $ * + ? {} [] \ | ()` can be matched using `\. & \^`
 
 🔗 [Regex101 Practice Workspace](https://regex101.com/r/dZFiXC/1)
+
+- **Flags**:
+
+```
+`g` (global): Searches for all occurrences of the pattern within the text, rather than just the first one.
+```
+
+```
+`i` (case-insensitive): Ignores case differences when matching letters
+```
+
+```
+`s` (dotAll): Allows the dot (.) to match newline characters (\n), which it doesn't do by default.
+```
+
+```
+### `u` Flag (Unicode Mode)
+
+Enables full Unicode support for the regex pattern.
+
+[Learn more about Unicode flag](BIM/REGEX/unicode.html)
+```
