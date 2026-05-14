@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic Number Validation</title>
+  </head>
+  <body>
+    <form>
+      <input type="number" id="number" />
+      <button>submit</button>
+    </form>
+    <p></p>
+    <script>
+      const form = document.querySelector("form");
+
+      const p = document.querySelector("p");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const number = Number(document.querySelector("#number").value);
+        const numRegex = /^(\+977|977)?(98|97)\d{8}$/;
+        numRegex.test(number)
+          ? (p.textContent = "valid Number")
+          : (p.textContent = "Invalid Number");
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
