@@ -30,9 +30,6 @@ conform to expected formats.
 ```
 
 ```
-### `u` Flag (Unicode Mode)
-
-Enables full Unicode support for the regex pattern.
-
-[Learn more about Unicode flag](BIM/REGEX/unicode.html)
+`u` Flag (Unicode Mode):Enables full Unicode support for the regex pattern.
 ```
+[Learn more about Unicode flag](https://anujghimire08.github.io/WebTechnology-I/BIM/REGEX/unicode.html)
