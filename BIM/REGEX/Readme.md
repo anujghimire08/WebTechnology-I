@@ -43,4 +43,4 @@ conform to expected formats.
 Ranges within character classes [a-z] or [0-9].
 Combined ranges within character classes [a-z0-9]Negated character classes [^abc].
 
-🔗 [Regex101 Character Classes Practice Workspace](https://regex101.com/r/bdhlwK/1)
+🔗 [Regex101 Number Practice Workspace](https://regex101.com/r/rV9dgB/1)
