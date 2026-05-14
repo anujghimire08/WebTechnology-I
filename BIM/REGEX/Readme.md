@@ -1,6 +1,6 @@
 ## Introduction to Regular Expressions
 
-Regular expressions are defined set of characters that follow rule \*\*used to search a pattern on string.
+Regular expressions are defined set of characters that follow rule **used to search a pattern on string**.
 these patterns are widely used for string searching and manipulation. in
 validation, regex helps ensure that strings such as email addresses and passwords
 conform to expected formats.
