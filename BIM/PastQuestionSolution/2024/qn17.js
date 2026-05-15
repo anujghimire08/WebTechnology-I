@@ -9,7 +9,7 @@ function generateTable() {
     <thead>
       <th colspan="2">Multiplication of ${userInput}</th>
     </thead>
-    <tbody><tr>`;
+    <tbody>`;
 
   for (let i = 1; i <= 10; i++) {
     tableHtml += `<tr>
