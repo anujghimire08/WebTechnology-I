@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE sony [
+<!ELEMENT sony (singer,genre,length,price)>
+<!ELEMENT singer (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT price (#PCDATA)>]>
+
+<sony>
+    <singer>xyz</singer>
+    <genre>pop</genre>
+    <length>3.45</length>
+    <price>Rs.2300</price>
+</sony>
