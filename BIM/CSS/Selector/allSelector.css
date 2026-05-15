@@ -76,6 +76,9 @@ p[class="intro"] {
 a[href$=".com"] {
   text-decoration: underline dotted red 2px;
 }
+span[id="spane"] {
+  font-weight: bold;
+}
 
 /* Group Selector */
 h1,
