@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>validation</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="email" id="mail" name="mail" />
+      <input type="number" name="number" id="number" />
+      <select name="hobby" id="select">
+        <option value="" disabled selected>Select Hobby</option>
+        <option value="f1">formula1</option>
+        <option value="football">football</option>
+        <option value="badminton">badminton</option>
+        <option value="chess">chess</option>
+      </select>
+      <label>Male<input type="radio" value="male" name="gender" /></label>
+      <label>Female<input type="radio" value="female" name="gender" /></label>
+      <input
+        type="text"
+        name=""
+        id="country"
+        list="countires"
+        placeholder="country"
+      />
+      <datalist id="countires">
+        <option value="Nepal">nepal</option>
+        <option value="india">India</option>
+      </datalist>
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="validation1.js"></script>
+  </body>
+</html>
