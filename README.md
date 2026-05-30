@@ -1,3 +1,5 @@
+<p id="top"></p>
+
 # Web Technology – I
 
 **Tech Stack:**
@@ -26,7 +28,7 @@ The purpose of this repository is to:
 ## 🎓 Academic Context
 
 - **Subject:** Web Development – I
-- **Level:** College Course
+- **Level:** Bachelor Course
 - **Focus Areas:** HTML5, CSS, JS, web structure, multimedia, and page layout
 - **Learning Mode:** Practical + Theory-based learning
 
@@ -81,6 +83,7 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜BoxSizing.css
  ┃ ┃ ┃ ┣ 📜BoxSizing.html
  ┃ ┃ ┃ ┣ 📜MarginProperty.html
+ ┃ ┃ ┃ ┣ 📜overflow.html
  ┃ ┃ ┃ ┗ 📜PaddingProperty.html
  ┃ ┃ ┣ 📂CSS Application Method
  ┃ ┃ ┃ ┣ 📜ExternalCSS.css
@@ -89,6 +92,7 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┗ 📜Internal.html
  ┃ ┃ ┣ 📂DisplayandPosition
  ┃ ┃ ┃ ┣ 📂Position
+ ┃ ┃ ┃ ┃ ┣ 📜alignment.html
  ┃ ┃ ┃ ┃ ┣ 📜Position Property.txt
  ┃ ┃ ┃ ┃ ┣ 📜PositionProperty.css
  ┃ ┃ ┃ ┃ ┣ 📜PositionProperty.html
@@ -121,7 +125,8 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜ColorTheory.html
  ┃ ┃ ┃ ┣ 📜FontandColor.html
  ┃ ┃ ┃ ┣ 📜FontProperty.html
- ┃ ┃ ┃ ┗ 📜IconFonts.html
+ ┃ ┃ ┃ ┣ 📜IconFonts.html
+ ┃ ┃ ┃ ┗ 📜max-width.html
  ┃ ┃ ┣ 📂Grid
  ┃ ┃ ┃ ┗ 📜LayoutGrid.html
  ┃ ┃ ┣ 📂Image Property
@@ -129,6 +134,7 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜Image.html
  ┃ ┃ ┃ ┗ 📜VisibilityProperty.html
  ┃ ┃ ┣ 📂Media Queries
+ ┃ ┃ ┃ ┣ 📜eg1.html
  ┃ ┃ ┃ ┗ 📜Media.html
  ┃ ┃ ┣ 📂Others
  ┃ ┃ ┃ ┣ 📜alignment-baseline.html
@@ -182,10 +188,18 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜Html.mp4
  ┃ ┃ ┃ ┗ 📜The Foundation of Web Pages.mp3
  ┃ ┃ ┣ 📜audio.html
+ ┃ ┃ ┣ 📜characterentity.html
+ ┃ ┃ ┣ 📜firstcode.html
  ┃ ┃ ┣ 📜HTML Course Certificate.pdf
+ ┃ ┃ ┣ 📜htmlevent.html
+ ┃ ┃ ┣ 📜hyperlink.html
  ┃ ┃ ┣ 📜iframe.html
+ ┃ ┃ ┣ 📜image.html
  ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┣ 📜list.html
+ ┃ ┃ ┣ 📜semantictag.html
  ┃ ┃ ┣ 📜StructureHTML.html
+ ┃ ┃ ┣ 📜table.html
  ┃ ┃ ┗ 📜video.html
  ┃ ┣ 📂JavaScript
  ┃ ┃ ┣ 📂01-GettingStartedwithJavaScript
@@ -259,15 +273,27 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┣ 📂11-Objects
  ┃ ┃ ┃ ┣ 📜freez.js
  ┃ ┃ ┃ ┣ 📜objectcloning.js
- ┃ ┃ ┃ ┗ 📜objectseals.js
+ ┃ ┃ ┃ ┣ 📜objectentries.js
+ ┃ ┃ ┃ ┣ 📜objectkeys.js
+ ┃ ┃ ┃ ┣ 📜objectseals.js
+ ┃ ┃ ┃ ┗ 📜objectvalues.js
+ ┃ ┃ ┣ 📂12-Arithmetic
+ ┃ ┃ ┃ ┣ 📜exponential.js
+ ┃ ┃ ┃ ┣ 📜maxmin.js
+ ┃ ┃ ┃ ┣ 📜root.js
+ ┃ ┃ ┃ ┣ 📜round.js
+ ┃ ┃ ┃ ┗ 📜unary.js
+ ┃ ┃ ┣ 📂13-Functions
+ ┃ ┃ ┃ ┣ 📜basicfun.js
+ ┃ ┃ ┃ ┣ 📜iife.js
+ ┃ ┃ ┃ ┗ 📜nested.js
  ┃ ┃ ┣ 📂AJAX
  ┃ ┃ ┃ ┣ 📜app.js
  ┃ ┃ ┃ ┣ 📜index.html
  ┃ ┃ ┃ ┗ 📜info.json
- ┃ ┃ ┣ 📂Cookie
- ┃ ┃ ┃ ┣ 📜app.js
- ┃ ┃ ┃ ┗ 📜cookie.html
  ┃ ┃ ┣ 📂jQuery
+ ┃ ┃ ┃ ┣ 📜animation.html
+ ┃ ┃ ┃ ┣ 📜animation.js
  ┃ ┃ ┃ ┣ 📜app.js
  ┃ ┃ ┃ ┣ 📜index.html
  ┃ ┃ ┃ ┣ 📜Readme.md
@@ -319,36 +345,22 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┃ ┗ 📜personObject.js
  ┃ ┃ ┣ 📂Practice
  ┃ ┃ ┃ ┣ 📜DomManipulate.html
- ┃ ┃ ┃ ┗ 📜sumGenerator.html
- ┃ ┃ ┣ 📂XML
- ┃ ┃ ┃ ┣ 📜abc.xml
- ┃ ┃ ┃ ┣ 📜advancenote.xml
- ┃ ┃ ┃ ┣ 📜advancenote.xsd
- ┃ ┃ ┃ ┣ 📜book.dtd
- ┃ ┃ ┃ ┣ 📜book.xml
- ┃ ┃ ┃ ┣ 📜Expenses.xml
- ┃ ┃ ┃ ┣ 📜ExpensesAmountLessThan2k.xq
- ┃ ┃ ┃ ┣ 📜ExpensesSources.xq
- ┃ ┃ ┃ ┣ 📜internal.xml
- ┃ ┃ ┃ ┣ 📜internaldtd.xml
- ┃ ┃ ┃ ┣ 📜intro.xml
- ┃ ┃ ┃ ┣ 📜namespace.xml
- ┃ ┃ ┃ ┣ 📜note
- ┃ ┃ ┃ ┣ 📜note.dtd
- ┃ ┃ ┃ ┣ 📜note.html
- ┃ ┃ ┃ ┣ 📜note.xml
- ┃ ┃ ┃ ┣ 📜note.xsd
- ┃ ┃ ┃ ┣ 📜note.xsl
- ┃ ┃ ┃ ┣ 📜OwnerName.xq
- ┃ ┃ ┃ ┣ 📜person.xml
- ┃ ┃ ┃ ┣ 📜Readme.md
- ┃ ┃ ┃ ┣ 📜student.xml
- ┃ ┃ ┃ ┣ 📜students.xml
- ┃ ┃ ┃ ┣ 📜style.css
- ┃ ┃ ┃ ┣ 📜style.xml
- ┃ ┃ ┃ ┗ 📜xml.dtd
+ ┃ ┃ ┃ ┣ 📜errorhandling.html
+ ┃ ┃ ┃ ┣ 📜sumGenerator.html
+ ┃ ┃ ┃ ┣ 📜validation1.html
+ ┃ ┃ ┃ ┗ 📜validation1.js
+ ┃ ┃ ┣ 📂Storage
+ ┃ ┃ ┃ ┣ 📂Cookie
+ ┃ ┃ ┃ ┃ ┣ 📜app.js
+ ┃ ┃ ┃ ┃ ┗ 📜cookie.html
+ ┃ ┃ ┃ ┣ 📂LocalStorage
+ ┃ ┃ ┃ ┃ ┣ 📜local.html
+ ┃ ┃ ┃ ┃ ┗ 📜local.js
+ ┃ ┃ ┃ ┗ 📂SessionStorage
+ ┃ ┃ ┃ ┃ ┣ 📜session.html
+ ┃ ┃ ┃ ┃ ┗ 📜session.js
  ┃ ┃ ┗ 📜Note.txt
- ┃ ┗ 📂PastQuestionSolution
+ ┃ ┣ 📂PastQuestionSolution
  ┃ ┃ ┣ 📂2023
  ┃ ┃ ┃ ┣ 📜qn12.html
  ┃ ┃ ┃ ┣ 📜qn18.html
@@ -372,6 +384,13 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜qn19.html
  ┃ ┃ ┃ ┣ 📜qn21.html
  ┃ ┃ ┃ ┗ 📜qn21.js
+ ┃ ┃ ┣ 📂2026
+ ┃ ┃ ┃ ┣ 📜qn17.html
+ ┃ ┃ ┃ ┣ 📜qn17.js
+ ┃ ┃ ┃ ┣ 📜qn18.xml
+ ┃ ┃ ┃ ┣ 📜qn19.html
+ ┃ ┃ ┃ ┣ 📜qn22.html
+ ┃ ┃ ┃ ┗ 📜qn22.js
  ┃ ┃ ┣ 📂PreBoard
  ┃ ┃ ┃ ┣ 📜Aqn9.html
  ┃ ┃ ┃ ┣ 📜Bqn1.html
@@ -384,6 +403,39 @@ Throughout this subject, I learned and practiced:
  ┃ ┃ ┃ ┣ 📜Dqn3.js
  ┃ ┃ ┃ ┗ 📜hamro.png
  ┃ ┃ ┗ 📜WEB.pdf
+ ┃ ┣ 📂REGEX
+ ┃ ┃ ┣ 📜emailvalidator.html
+ ┃ ┃ ┣ 📜numbervalidator.html
+ ┃ ┃ ┣ 📜Readme.md
+ ┃ ┃ ┗ 📜unicode.html
+ ┃ ┗ 📂XML
+ ┃ ┃ ┣ 📜abc.xml
+ ┃ ┃ ┣ 📜advancenote.xml
+ ┃ ┃ ┣ 📜advancenote.xsd
+ ┃ ┃ ┣ 📜anujXMLBaiscsaspirego.pdf
+ ┃ ┃ ┣ 📜book.dtd
+ ┃ ┃ ┣ 📜book.xml
+ ┃ ┃ ┣ 📜Expenses.xml
+ ┃ ┃ ┣ 📜ExpensesAmountLessThan2k.xq
+ ┃ ┃ ┣ 📜ExpensesSources.xq
+ ┃ ┃ ┣ 📜internal.xml
+ ┃ ┃ ┣ 📜internaldtd.xml
+ ┃ ┃ ┣ 📜intro.xml
+ ┃ ┃ ┣ 📜namespace.xml
+ ┃ ┃ ┣ 📜note
+ ┃ ┃ ┣ 📜note.dtd
+ ┃ ┃ ┣ 📜note.html
+ ┃ ┃ ┣ 📜note.xml
+ ┃ ┃ ┣ 📜note.xsd
+ ┃ ┃ ┣ 📜note.xsl
+ ┃ ┃ ┣ 📜OwnerName.xq
+ ┃ ┃ ┣ 📜person.xml
+ ┃ ┃ ┣ 📜Readme.md
+ ┃ ┃ ┣ 📜student.xml
+ ┃ ┃ ┣ 📜students.xml
+ ┃ ┃ ┣ 📜style.css
+ ┃ ┃ ┣ 📜style.xml
+ ┃ ┃ ┗ 📜xml.dtd
  ┣ 📂Projects
  ┃ ┣ 📂Calculator
  ┃ ┃ ┣ 📜app.js
@@ -420,3 +472,31 @@ Throughout this subject, I learned and practiced:
  ┣ 📜index.html
  ┗ 📜README.md
 ```
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+---
+
+<p align="center">
+  <b>Don't forget to leave a ⭐ if you loved it!!</b><br>
+  <sub>Built with <ruby>Love<rt>❤️</rt></ruby> by</sub>
+</p>
+
+<div align="center">
+  <tr>
+    <td align="center" title="Developer">
+      <a href="https://github.com/anujghimire08">
+        <img src="./assets/images/profile.jpg" width="90;" alt="anujghimire08"/>
+        <br />
+        <sub><b>@anujghimire08</b></b></sub>
+      </a>
+    </td>
+  </tr>
+</div>
+
+---
+
+<p align="center">
+  <a href="#top">🔺 Back to Top</a></p>
